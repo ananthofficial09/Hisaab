@@ -1,0 +1,1091 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Hisaab</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+/* Layout: sticky header (brand, month stepper, theme) with scrollable tab chips; one column on phones, two-column charts on desktop. Savings is the single hero figure; everything else stays quiet. */
+:root{
+  --bg:#F1F4F3; --surface:#FFFFFF; --surface-2:#E8EDEB; --line:#D5DDDA;
+  --ink:#16231F; --ink-2:#4E5F59; --ink-3:#74847E;
+  --accent:#0C6B58; --accent-ink:#FFFFFF; --accent-soft:#D6EDE6;
+  --good:#157F4F; --warn:#8F5A00; --warn-soft:#FBEBC8; --bad:#B3261E; --bad-soft:#FADAD6;
+  --c-income:#0C6B58; --c-expense:#C2603A; --c-save:#1F3A8A;
+  --shadow:0 1px 2px rgba(22,35,31,.06),0 8px 24px rgba(22,35,31,.06);
+  --radius:14px;
+  --font:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0D1412; --surface:#16211E; --surface-2:#1F2D29; --line:#2B3B36;
+    --ink:#E8F1EE; --ink-2:#A9BAB3; --ink-3:#82958E;
+    --accent:#3FBF9F; --accent-ink:#06231C; --accent-soft:#17382F;
+    --good:#4CC38A; --warn:#E4B04A; --warn-soft:#3A2E12; --bad:#FF8A80; --bad-soft:#3E1B18;
+    --c-income:#3FBF9F; --c-expense:#E58A63; --c-save:#9DB2FF;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.3);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0D1412; --surface:#16211E; --surface-2:#1F2D29; --line:#2B3B36;
+  --ink:#E8F1EE; --ink-2:#A9BAB3; --ink-3:#82958E;
+  --accent:#3FBF9F; --accent-ink:#06231C; --accent-soft:#17382F;
+  --good:#4CC38A; --warn:#E4B04A; --warn-soft:#3A2E12; --bad:#FF8A80; --bad-soft:#3E1B18;
+  --c-income:#3FBF9F; --c-expense:#E58A63; --c-save:#9DB2FF;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.3);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:15px;line-height:1.45;font-variant-numeric:tabular-nums;min-height:100vh}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--surface)}
+h1,h2,h3,p{margin:0}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+a{color:var(--accent)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.in{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* header */
+.band{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
+.hrow{display:flex;align-items:center;justify-content:space-between;gap:8px;padding-block:10px 4px}
+.brand{font-weight:800;font-size:18px;letter-spacing:-.01em;display:flex;align-items:center;gap:8px}
+.brand img{width:32px;height:32px;border-radius:8px;flex:none;display:block}
+.brand small{font-weight:500;font-size:12px;color:var(--ink-3);letter-spacing:0}
+.stepper{display:flex;align-items:center;gap:2px}
+.stepper .lbl{min-width:118px;text-align:center;font-weight:600;font-size:15px}
+.icon-btn{border:0;background:transparent;width:40px;height:40px;border-radius:10px;display:inline-grid;place-items:center;color:var(--ink-2)}
+.icon-btn:hover{background:var(--surface-2);color:var(--ink)}
+.today-chip{border:1px solid var(--line);background:transparent;border-radius:999px;font-size:12px;padding:3px 10px;color:var(--accent);font-weight:600}
+.tabs{display:flex;gap:4px;overflow-x:auto;padding-block:4px 8px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;padding:7px 14px;border-radius:999px;text-decoration:none;color:var(--ink-2);font-weight:600;font-size:14px}
+.tab:hover{background:var(--surface-2)}
+.tab[aria-current="page"]{background:var(--accent);color:var(--accent-ink)}
+.views{display:flex;gap:6px;overflow-x:auto;padding-block:0 10px;align-items:center;scrollbar-width:none}
+.views::-webkit-scrollbar{display:none}
+.vlbl{font-size:12px;color:var(--ink-3);font-weight:700;text-transform:uppercase;letter-spacing:.06em;flex:none;margin-right:2px}
+.vchip{flex:none;display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--surface);border-radius:99px;padding:5px 12px;font-size:13px;font-weight:600;color:var(--ink-2)}
+.vchip[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);color:var(--ink)}
+.who{padding:12px 0;border-top:1px solid var(--line)}
+.who:first-child{border-top:0}
+.who .l{display:flex;justify-content:space-between;gap:4px 12px;flex-wrap:wrap;align-items:center}
+.who .n{display:flex;align-items:center;gap:8px}
+.small.neg{color:var(--bad);font-weight:600}
+.banner{background:var(--warn-soft);color:var(--warn);padding:8px 16px;font-size:13px;text-align:center;font-weight:600}
+
+/* layout */
+main.in{padding-block:16px 120px;display:flex;flex-direction:column;gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px;min-width:0}
+.card h2{font-size:15px;font-weight:700;margin-bottom:12px;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.card h2 small{font-weight:500;color:var(--ink-3);font-size:12px}
+.grid2{display:grid;grid-template-columns:1fr;gap:16px}
+@media (min-width:860px){.grid2{grid-template-columns:1fr 1fr}.span2{grid-column:1/-1}}
+.muted{color:var(--ink-2)}
+.small{font-size:13px}
+.sample{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;justify-content:space-between;background:var(--accent-soft);border-radius:var(--radius);padding:10px 14px;font-size:13px}
+
+/* hero */
+.hero{padding:20px;box-shadow:var(--shadow)}
+.hero .top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap}
+.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-3);font-weight:700}
+.big{font-size:clamp(34px,9vw,48px);font-weight:800;letter-spacing:-.02em;line-height:1.1;margin-top:4px;color:var(--accent);overflow-wrap:anywhere}
+.big.neg{color:var(--bad)}
+.split{display:flex;height:12px;border-radius:99px;overflow:hidden;background:var(--surface-2);margin-top:18px}
+.split i{display:block;height:100%}
+.split .sp{background:var(--c-expense)}
+.split .sv{background:var(--accent)}
+.splitlbl{display:flex;justify-content:space-between;gap:8px;font-size:13px;color:var(--ink-2);margin-top:8px;flex-wrap:wrap}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:18px;border-top:1px solid var(--line);padding-top:14px}
+.stats>div{padding-right:8px;min-width:0}
+.stats>div+div{padding-left:12px;border-left:1px solid var(--line)}
+.stats b{display:block;font-size:clamp(14px,4.2vw,18px);font-weight:700;overflow-wrap:anywhere}
+.stats span{font-size:12px;color:var(--ink-3)}
+.pill{display:inline-flex;align-items:center;gap:4px;border-radius:99px;padding:2px 9px;font-size:12px;font-weight:700;white-space:nowrap;background:var(--surface-2);color:var(--ink-2)}
+.pill.good{background:var(--accent-soft);color:var(--good)}
+.pill.warn{background:var(--warn-soft);color:var(--warn)}
+.pill.bad{background:var(--bad-soft);color:var(--bad)}
+
+/* buttons / forms */
+.btn{border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:9px 14px;font-weight:600;font-size:14px;display:inline-flex;align-items:center;gap:6px;justify-content:center}
+.btn:hover{background:var(--surface-2)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn.primary:hover{filter:brightness(1.08)}
+.btn.ghost{border-color:transparent;background:transparent;color:var(--accent)}
+.btn.danger{background:var(--bad);border-color:var(--bad);color:#fff}
+.btn.sm{padding:6px 10px;font-size:13px}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+.link{border:0;background:none;color:var(--accent);font-weight:700;padding:4px 8px}
+.fld{display:flex;flex-direction:column;gap:6px;border:0;padding:0;margin:0;min-width:0}
+.fld>span,.fld>legend{font-size:13px;font-weight:600;color:var(--ink-2);padding:0}
+input,select,textarea{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;min-width:0;width:100%}
+input[type=radio],input[type=checkbox]{width:auto}
+select{appearance:auto}
+textarea{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;min-height:120px;resize:vertical}
+.frow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.search{position:relative;display:block}
+.search .ic{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--ink-3)}
+.search input{padding-left:38px}
+.filters{display:flex;flex-direction:column;gap:12px}
+.filters summary{cursor:pointer;font-weight:600;color:var(--accent);font-size:14px;margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;pointer-events:none}
+.chip span{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:var(--surface);cursor:pointer;font-size:14px}
+.chip input:checked+span{border-color:var(--accent);background:var(--accent-soft);font-weight:700}
+.chip input:focus-visible+span{outline:2px solid var(--accent);outline-offset:2px}
+.dot{width:10px;height:10px;border-radius:50%;flex:none;display:inline-block}
+.sws{display:flex;flex-wrap:wrap;gap:10px}
+.sw{position:relative}
+.sw input{position:absolute;opacity:0;pointer-events:none}
+.sw span{display:block;width:32px;height:32px;border-radius:50%;cursor:pointer}
+.sw input:checked+span{box-shadow:0 0 0 2px var(--surface),0 0 0 4px var(--ink)}
+.sw input:focus-visible+span{outline:2px solid var(--accent);outline-offset:3px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.seg button{border:0;background:transparent;padding:8px 14px;font-weight:600;font-size:14px;color:var(--ink-2)}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.ferr{color:var(--bad);font-size:13px;font-weight:600}
+
+/* lists */
+.list{list-style:none;margin:0;padding:0}
+.row{display:flex;align-items:center;gap:4px;border-top:1px solid var(--line)}
+.row:first-child{border-top:0}
+.row-main{flex:1;min-width:0;border:0;background:transparent;text-align:left;display:flex;align-items:center;gap:12px;padding:12px 4px;border-radius:10px}
+.row-main:hover{background:var(--surface-2)}
+.row-t{flex:1;min-width:0}
+.row-t b{display:block;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.row-t small{display:block;color:var(--ink-3);font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.amt{font-weight:700;white-space:nowrap}
+.dayh{display:flex;justify-content:space-between;gap:8px;font-size:13px;font-weight:700;color:var(--ink-2);padding:14px 4px 6px;border-bottom:2px solid var(--line)}
+.dayh:first-child{padding-top:2px}
+.sumline{display:flex;justify-content:space-between;gap:8px;font-size:13px;color:var(--ink-2);margin-bottom:4px;flex-wrap:wrap}
+.empty{text-align:center;padding:28px 12px;color:var(--ink-2);display:flex;flex-direction:column;align-items:center;gap:12px}
+.empty b{color:var(--ink);font-size:16px}
+.bar{height:8px;border-radius:99px;background:var(--surface-2);overflow:hidden;margin-top:6px}
+.bar i{display:block;height:100%;background:var(--accent);border-radius:99px}
+.bar i.warn{background:var(--warn)}
+.bar i.bad{background:var(--bad)}
+.brow{padding:12px 4px;flex:1;min-width:0}
+.brow .l{display:flex;justify-content:space-between;gap:8px;align-items:center}
+.sw-tog{border:1px solid var(--line);background:var(--surface-2);border-radius:99px;width:44px;height:26px;position:relative;padding:0;flex:none}
+.sw-tog::after{content:"";position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:var(--ink-3);transition:transform .15s}
+.sw-tog[aria-checked="true"]{background:var(--accent);border-color:var(--accent)}
+.sw-tog[aria-checked="true"]::after{transform:translateX(18px);background:var(--accent-ink)}
+
+/* compare */
+.cmp{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:4px 10px;align-items:center;padding:10px 0;border-top:1px solid var(--line)}
+.cmp:first-child{border-top:0}
+.cmp .n{display:flex;align-items:center;gap:8px;min-width:0;overflow-wrap:anywhere}
+.cmp .v{text-align:right;line-height:1.2}
+.cmp .v b{display:block}
+.cmp .v small{color:var(--ink-3);font-size:12px}
+.cmp.tot .n{font-weight:700}
+
+/* charts */
+svg.chart{width:100%;height:auto;display:block;max-width:600px;margin:0 auto}
+.grid{stroke:var(--line);stroke-width:1}
+.ax{fill:var(--ink-3);font-size:10px;font-family:var(--font)}
+.cn{fill:var(--ink);font-family:var(--font)}
+.bar-exp{fill:var(--c-expense)}
+.bar-inc{fill:var(--c-income)}
+.ln-sav{stroke:var(--c-save);fill:none;stroke-width:2;stroke-linejoin:round}
+.pt-sav{fill:var(--surface);stroke:var(--c-save);stroke-width:2}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--ink-2);margin-top:10px;justify-content:center}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:10px;height:10px;border-radius:3px;display:inline-block}
+.donutwrap{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:center}
+.donutwrap svg{width:180px;height:180px;flex:none}
+.dleg{list-style:none;margin:0;padding:0;flex:1;min-width:200px;display:flex;flex-direction:column;gap:6px;font-size:14px}
+.dleg li{display:grid;grid-template-columns:auto minmax(0,1fr) auto auto;gap:8px;align-items:center}
+.dleg .pc{color:var(--ink-3);font-size:12px;min-width:34px;text-align:right}
+
+/* floating add, toast, modal */
+.fab{position:fixed;right:calc(max(16px,env(safe-area-inset-right,0px)));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:15;border:0;border-radius:99px;background:var(--accent);color:var(--accent-ink);padding:14px 20px 14px 16px;font-weight:700;display:inline-flex;gap:8px;align-items:center;box-shadow:0 6px 20px rgba(0,0,0,.28)}
+.fab:hover{filter:brightness(1.08)}
+#toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(84px + env(safe-area-inset-bottom,0px));z-index:50;background:var(--ink);color:var(--bg);padding:10px 14px;border-radius:12px;display:flex;align-items:center;gap:10px;max-width:min(92vw,460px);font-size:14px;box-shadow:var(--shadow)}
+#toast .link{color:var(--bg);text-decoration:underline}
+.mback{position:fixed;inset:0;z-index:40;background:rgba(8,14,12,.55);display:flex;align-items:flex-end;justify-content:center;overflow-y:auto;padding:0}
+.modal{background:var(--surface);width:100%;max-width:480px;border-radius:20px 20px 0 0;padding:20px max(16px,env(safe-area-inset-left,0px)) calc(20px + env(safe-area-inset-bottom,0px));max-height:92vh;overflow-y:auto}
+.modal h2{font-size:18px;margin-bottom:4px}
+.modal .sub{color:var(--ink-2);font-size:13px;margin-bottom:12px}
+.modal form{display:flex;flex-direction:column;gap:14px;margin-top:12px}
+.mfoot{display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap;margin-top:4px}
+@media (min-width:640px){.mback{align-items:center;padding:24px}.modal{border-radius:20px;padding:24px}}
+.panel{border:1px solid var(--line);background:var(--surface-2);border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:10px;margin-top:10px}
+.panel.bad{border-color:var(--bad);background:var(--bad-soft)}
+.sec{display:flex;flex-direction:column;gap:10px}
+.sec+.sec{border-top:1px solid var(--line);padding-top:16px;margin-top:6px}
+.sec h3{font-size:14px}
+.btns{display:flex;flex-wrap:wrap;gap:8px}
+.gain{color:var(--good)}.loss{color:var(--bad)}.amt small{display:block;font-size:12px;text-align:right;font-weight:600}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<div id="storeBanner" class="banner" hidden>Saving is blocked in this browser, so changes will be lost when you close the page. Use Settings to download a backup.</div>
+<header class="band">
+  <div class="in">
+    <div class="hrow" id="hrow"></div>
+    <nav class="tabs" id="tabs" aria-label="Sections"></nav>
+    <div class="views" id="views" hidden></div>
+  </div>
+</header>
+<main class="in" id="main"></main>
+<button class="fab" data-act="add-exp" id="fab"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>Add expense</button>
+<div id="toast" role="status" aria-live="polite" hidden></div>
+<div id="modalRoot"></div>
+
+<script>
+(function(){
+'use strict';
+var LOGO='data:image/png;base64,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';
+var KEY='hisaab.v1', VERSION=2, OWNER='m_me', MAXP=1000000000; // MAXP = ₹1,00,00,000 in paise
+var MN=['January','February','March','April','May','June','July','August','September','October','November','December'];
+var WD=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+var PALETTE=['#E07A5F','#3D85C6','#8E7CC3','#E0A526','#2E9E83','#D4577F','#6AA84F','#C27C0E','#5B8DB8','#8C8C8C'];
+var MCOL=['#2E9E83','#3D85C6','#E07A5F','#8E7CC3','#E0A526','#D4577F','#6AA84F','#5B8DB8'];
+var DEFAULT_CATS=[['Rent',1],['Food',0],['Groceries',6],['Transport',3],['Bills & Utilities',2],['Health',5],['Shopping',4],['Entertainment',7],['Education',8],['Other',9]];
+var INV_TYPES=['SIP','Mutual Fund','Stocks','Gold','Fixed Deposit','PPF / EPF','Crypto','Real Estate','Other'];
+var INV_COL=['#2E9E83','#3D85C6','#8E7CC3','#E0A526','#5B8DB8','#6AA84F','#E07A5F','#C27C0E','#8C8C8C'];
+var TABS=[['dashboard','Dashboard'],['expenses','Expenses'],['income','Income'],['investments','Investments'],['categories','Categories'],['recurring','Recurring'],['preferences','Settings']];
+
+/* ---------- tiny helpers ---------- */
+function $(s,r){return (r||document).querySelector(s)}
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+function uid(){return Date.now().toString(36)+Math.random().toString(36).slice(2,8)}
+function pad(n){return n<10?'0'+n:''+n}
+function sum(a,f){var t=0;for(var i=0;i<a.length;i++)t+=f(a[i]);return t}
+function icon(n){var p={
+ plus:'M12 5v14M5 12h14',edit:'M4 20h4l10-10-4-4L4 16v4zM13 7l4 4',
+ trash:'M5 7h14M10 11v6M14 11v6M8 7l1-3h6l1 3M7 7l1 13h8l1-13',
+ left:'M15 5l-7 7 7 7',right:'M9 5l7 7-7 7',search:'M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14zM20 20l-4-4',
+ sun:'M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6L7 7M17 17l1.4 1.4M5.6 18.4L7 17M17 7l1.4-1.4M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8z',
+ moon:'M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z'};
+ return '<svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="'+p[n]+'"/></svg>'}
+
+/* ---------- money (stored as integer paise) ---------- */
+var nf0=new Intl.NumberFormat('en-IN',{maximumFractionDigits:0});
+var nf2=new Intl.NumberFormat('en-IN',{minimumFractionDigits:2,maximumFractionDigits:2});
+function inr(p){var a=Math.abs(p);var s=(a%100===0)?nf0.format(a/100):nf2.format(a/100);return (p<0?'−':'')+'₹'+s}
+function trim1(n){return n.toFixed(1).replace(/\.0$/,'')}
+function inrShort(p){var r=Math.abs(p)/100,s;
+ if(r>=1e7)s=trim1(r/1e7)+'Cr';else if(r>=1e5)s=trim1(r/1e5)+'L';else if(r>=1e3)s=trim1(r/1e3)+'k';else s=String(Math.round(r));
+ return (p<0?'−':'')+'₹'+s}
+function parseAmt(v){v=String(v==null?'':v).replace(/[₹,\s]/g,'');if(!/^\d+(\.\d{1,2})?$/.test(v))return null;return Math.round(parseFloat(v)*100)}
+function rupeesStr(p){return (p/100).toFixed(p%100?2:0)}
+
+/* ---------- dates ---------- */
+function ymd(d){return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate())}
+function ym(d){return d.getFullYear()+'-'+pad(d.getMonth()+1)}
+function today(){return ymd(new Date())}
+function curMonth(){return ym(new Date())}
+function addMonths(m,n){return ym(new Date(+m.slice(0,4),+m.slice(5,7)-1+n,1))}
+function daysIn(m){return new Date(+m.slice(0,4),+m.slice(5,7),0).getDate()}
+function monthLabel(m){return MN[+m.slice(5,7)-1]+' '+m.slice(0,4)}
+function monthShort(m){return MN[+m.slice(5,7)-1].slice(0,3)}
+function fmtDate(s){return s.slice(8,10)+' '+MN[+s.slice(5,7)-1].slice(0,3)+' '+s.slice(0,4)}
+function validDate(s){if(!/^\d{4}-\d{2}-\d{2}$/.test(s))return false;return ymd(new Date(+s.slice(0,4),+s.slice(5,7)-1,+s.slice(8,10)))===s}
+function dayLabel(d){var t=today(),y=new Date();y.setDate(y.getDate()-1);
+ var w=d===t?'Today':d===ymd(y)?'Yesterday':WD[new Date(+d.slice(0,4),+d.slice(5,7)-1,+d.slice(8,10)).getDay()];
+ return w+' · '+fmtDate(d)}
+
+/* ---------- state ---------- */
+var S, month=curMonth(), view='dashboard', storageOk=true, undoFn=null, toastTimer=null, importInfo=null, resetOpen=false, lastCat=null, lastWho=null, modalState=null;
+var F={q:'',cat:'',from:'',to:'',min:'',max:'',scope:'month'};
+var origTheme=document.documentElement.getAttribute('data-theme');
+
+function freshState(){
+ return {v:VERSION,theme:'system',welcomed:false,scope:OWNER,members:[{id:OWNER,name:'Me',color:MCOL[0]}],
+  categories:DEFAULT_CATS.map(function(c){return {id:'c_'+c[0].toLowerCase().replace(/[^a-z]+/g,''),name:c[0],color:PALETTE[c[1]],budget:null}}),
+  income:{},expenses:[],recurring:[],investments:[],applied:{}};
+}
+function cleanStr(x,max){return typeof x==='string'?x.replace(/[\u0000-\u001f]/g,' ').trim().slice(0,max):''}
+function cleanInt(x,min,max){if(typeof x!=='number'||!isFinite(x))return null;x=Math.round(x);return(x<min||x>max)?null:x}
+function migrate(o){ /* v1 had no members: missing members/who fields fall back to the owner in sanitize. Future versions add steps here. */ return o}
+
+function sanitize(o){
+ function fail(m){return {ok:false,error:m}}
+ if(!o||typeof o!=='object'||Array.isArray(o))return fail('This is not a Hisaab backup file.');
+ if(typeof o.v!=='number')return fail('This file has no version number, so it does not look like a Hisaab backup.');
+ if(o.v>VERSION)return fail('This backup was made by a newer version of Hisaab. Update the app and try again.');
+ o=migrate(o);
+ var st=freshState();
+ st.theme=(o.theme==='light'||o.theme==='dark')?o.theme:'system';
+ st.welcomed=true;
+ var mids={};st.members=[];
+ if(Array.isArray(o.members)){o.members.forEach(function(m,i){
+  if(!m||typeof m!=='object')return;
+  var id=cleanStr(m.id,40)||uid();if(mids[id])return;
+  var nm=cleanStr(m.name,30);if(!nm)return;
+  mids[id]=1;
+  st.members.push({id:id,name:nm,color:(typeof m.color==='string'&&/^#[0-9a-fA-F]{6}$/.test(m.color))?m.color:MCOL[i%MCOL.length]});
+ })}
+ if(!mids[OWNER]){st.members.unshift({id:OWNER,name:'Me',color:MCOL[0]});mids[OWNER]=1}
+ else st.members.sort(function(a,b){return a.id===OWNER?-1:b.id===OWNER?1:0});
+ st.scope=(o.scope==='all'||mids[o.scope])?o.scope:OWNER;
+ var fixW=function(w){return mids[w]?w:OWNER};
+ if(Array.isArray(o.categories)&&o.categories.length){
+  var seen={};st.categories=[];
+  o.categories.forEach(function(c,i){
+   if(!c||typeof c!=='object')return;
+   var id=cleanStr(c.id,40)||uid();if(seen[id])return;seen[id]=1;
+   var nm=cleanStr(c.name,40);if(!nm)return;
+   var col=(typeof c.color==='string'&&/^#[0-9a-fA-F]{6}$/.test(c.color))?c.color:PALETTE[i%PALETTE.length];
+   var b=cleanInt(c.budget,1,MAXP);
+   st.categories.push({id:id,name:nm,color:col,budget:b});
+  });
+  if(!st.categories.length)st.categories=freshState().categories;
+ }
+ var ids={};st.categories.forEach(function(c){ids[c.id]=1});
+ var other=st.categories.filter(function(c){return c.name.toLowerCase()==='other'})[0]||st.categories[st.categories.length-1];
+ var fix=function(id){return ids[id]?id:other.id};
+ if(o.income&&typeof o.income==='object'&&!Array.isArray(o.income)){
+  Object.keys(o.income).forEach(function(m){
+   if(!/^\d{4}-(0[1-9]|1[0-2])$/.test(m)||!Array.isArray(o.income[m]))return;
+   var arr=[];o.income[m].forEach(function(it){
+    if(!it||typeof it!=='object')return;
+    var a=cleanInt(it.amount,1,MAXP),n=cleanStr(it.name,40);if(a==null||!n)return;
+    var r={id:cleanStr(it.id,40)||uid(),name:n,amount:a,who:fixW(it.who)};if(it.s)r.s=1;arr.push(r);
+   });
+   if(arr.length)st.income[m]=arr;
+  });
+ }
+ if(Array.isArray(o.expenses)){
+  o.expenses.forEach(function(e){
+   if(!e||typeof e!=='object')return;
+   var a=cleanInt(e.amount,1,MAXP);if(a==null||typeof e.date!=='string'||!validDate(e.date))return;
+   var r={id:cleanStr(e.id,40)||uid(),date:e.date,amount:a,catId:fix(e.catId),note:cleanStr(e.note,120),who:fixW(e.who)};
+   if(typeof e.recId==='string')r.recId=cleanStr(e.recId,40);if(e.s)r.s=1;st.expenses.push(r);
+  });
+ }
+ if(Array.isArray(o.recurring)){
+  o.recurring.forEach(function(r){
+   if(!r||typeof r!=='object')return;
+   var a=cleanInt(r.amount,1,MAXP),d=cleanInt(r.day,1,31),n=cleanStr(r.name,40);if(a==null||d==null||!n)return;
+   var x={id:cleanStr(r.id,40)||uid(),name:n,amount:a,catId:fix(r.catId),who:fixW(r.who),day:d,active:r.active!==false,start:/^\d{4}-\d{2}$/.test(r.start)?r.start:curMonth()};
+   if(r.s)x.s=1;st.recurring.push(x);
+  });
+ }
+ if(Array.isArray(o.investments)){o.investments.forEach(function(v){
+  if(!v||typeof v!=='object')return;
+  var a=cleanInt(v.invested,1,MAXP),c=cleanInt(v.value,0,MAXP),n=cleanStr(v.name,40);
+  if(a==null||c==null||!n||typeof v.date!=='string'||!validDate(v.date))return;
+  var r={id:cleanStr(v.id,40)||uid(),name:n,type:INV_TYPES.indexOf(v.type)>=0?v.type:'Other',invested:a,value:c,date:v.date,who:fixW(v.who)};
+  if(v.s)r.s=1;st.investments.push(r);
+ })}
+ if(o.applied&&typeof o.applied==='object'&&!Array.isArray(o.applied)){
+  Object.keys(o.applied).forEach(function(k){if(/^\d{4}-\d{2}\|.{1,40}$/.test(k))st.applied[k]=1});
+ }
+ return {ok:true,state:st};
+}
+
+function load(){
+ try{var t='hisaab.test';localStorage.setItem(t,'1');localStorage.removeItem(t)}catch(e){storageOk=false}
+ try{var raw=localStorage.getItem(KEY);if(raw){var r=sanitize(JSON.parse(raw));if(r.ok){r.state.welcomed=JSON.parse(raw).welcomed===true;return r.state}}}catch(e){}
+ return freshState();
+}
+function save(){
+ try{localStorage.setItem(KEY,JSON.stringify(S));storageOk=true}catch(e){storageOk=false}
+ $('#storeBanner').hidden=storageOk;
+}
+
+/* ---------- selectors / calculations ---------- */
+function cat(id){return S.categories.filter(function(c){return c.id===id})[0]||{id:id,name:'Uncategorised',color:'#8C8C8C',budget:null}}
+/* sc = whose money: a member id, or 'all' for the household. Defaults to the current view. */
+function monthExpenses(m,sc){return S.expenses.filter(function(e){return e.date.slice(0,7)===m&&inScope(e.who,sc)})}
+function monthIncome(m,sc){return sum((S.income[m]||[]).filter(function(i){return inScope(i.who,sc)}),function(i){return i.amount})}
+function totals(m,sc){var inc=monthIncome(m,sc),exp=sum(monthExpenses(m,sc),function(e){return e.amount});return {inc:inc,exp:exp,sav:inc-exp,rate:inc>0?(inc-exp)/inc:null}}
+function spendByCat(m,sc){var o={};monthExpenses(m,sc).forEach(function(e){o[e.catId]=(o[e.catId]||0)+e.amount});return o}
+function daysElapsed(m){var c=curMonth();if(m<c)return daysIn(m);if(m>c)return 0;return new Date().getDate()}
+function budgetNote(catId,m){
+ var c=cat(catId);if(!c.budget)return '';
+ var spent=spendByCat(m)[catId]||0,r=spent/c.budget;
+ if(r>1)return c.name+' is over budget by '+inr(spent-c.budget)+'.';
+ if(r>=0.8)return c.name+' has used '+Math.round(r*100)+'% of its '+inr(c.budget)+' budget.';
+ return '';
+}
+function ensureRecurring(m){
+ if(m>curMonth())return false;
+ var changed=false,t=today();
+ S.recurring.forEach(function(r){
+  if(!r.active||r.start>m)return;
+  var k=m+'|'+r.id;if(S.applied[k])return;
+  var date=m+'-'+pad(Math.min(r.day,daysIn(m)));
+  if(date>t)return; // not due yet
+  var e={id:uid(),date:date,amount:r.amount,catId:r.catId,note:r.name,recId:r.id,who:r.who||OWNER};if(r.s)e.s=1;
+  S.expenses.push(e);S.applied[k]=1;changed=true;
+ });
+ if(changed)save();
+ return changed;
+}
+
+/* ---------- theme ---------- */
+function applyTheme(){
+ var r=document.documentElement;
+ if(S.theme==='system'){if(origTheme)r.setAttribute('data-theme',origTheme);else r.removeAttribute('data-theme')}
+ else r.setAttribute('data-theme',S.theme);
+}
+function isDark(){var a=document.documentElement.getAttribute('data-theme');if(a)return a==='dark';return !!(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)}
+
+/* ---------- toast & modal ---------- */
+function toast(msg,undo){
+ var t=$('#toast');undoFn=undo||null;
+ t.innerHTML='<span>'+esc(msg)+'</span>'+(undo?'<button class="link" data-act="toast-undo">Undo</button>':'');
+ t.hidden=false;clearTimeout(toastTimer);
+ toastTimer=setTimeout(function(){t.hidden=true;undoFn=null},undo?7000:3800);
+}
+function openModal(o){
+ closeModal(true);
+ var root=$('#modalRoot');
+ root.innerHTML='<div class="mback" data-act="modal-back"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="mtitle"><h2 id="mtitle">'+esc(o.title)+'</h2>'+(o.sub?'<p class="sub">'+o.sub+'</p>':'')+
+  '<form id="mform" novalidate>'+o.body+'<p class="ferr" id="merr" role="alert" hidden></p><div class="mfoot">'+
+  (o.footer||('<button type="button" class="btn ghost" data-act="modal-close">Cancel</button>'+(o.extra||'')+'<button class="btn primary" type="submit" value="save">'+esc(o.submit||'Save')+'</button>'))+
+  '</div></form></div></div>';
+ modalState={onSubmit:o.onSubmit,prev:document.activeElement,onClose:o.onClose};
+ var f=$('#mform');
+ f.addEventListener('submit',function(ev){
+  ev.preventDefault();
+  if(!modalState||!modalState.onSubmit){closeModal();return}
+  var r=modalState.onSubmit(f,ev.submitter);
+  if(r==='keep')return;
+  if(typeof r==='string'&&r){var er=$('#merr');er.textContent=r;er.hidden=false;return}
+  closeModal(true);
+ });
+ var first=f.querySelector('input:not([type=radio]),select,button');if(first&&first.focus)first.focus();
+}
+function closeModal(silent){
+ var root=$('#modalRoot');if(!root.innerHTML)return;
+ var st=modalState;root.innerHTML='';modalState=null;
+ if(st){if(!silent&&st.onClose)st.onClose();if(st.prev&&st.prev.focus&&document.body.contains(st.prev))try{st.prev.focus()}catch(e){}}
+}
+function fieldErr(msg){return msg}
+
+/* ---------- family members ---------- */
+function multi(){return S.members.length>1}
+function member(id){return S.members.filter(function(m){return m.id===id})[0]||S.members[0]}
+function inScope(w,sc){sc=sc||S.scope;return sc==='all'||(w||OWNER)===sc}
+function scopeLabel(){return S.scope==='all'?'Household':member(S.scope).name}
+function defWho(){if(S.scope!=='all')return S.scope;return S.members.some(function(m){return m.id===lastWho})?lastWho:OWNER}
+function whoField(sel,label){
+ if(!multi())return '';
+ return '<fieldset class="fld"><legend>'+label+'</legend><div class="chips" role="radiogroup" aria-label="'+label+'">'+S.members.map(function(m){return '<label class="chip"><input type="radio" name="who" value="'+m.id+'"'+(m.id===sel?' checked':'')+'><span><i class="dot" style="background:'+m.color+'"></i>'+esc(m.name)+'</span></label>'}).join('')+'</div></fieldset>';
+}
+function checkedWho(f){var r=f.querySelector('input[name=who]:checked');return r?r.value:OWNER}
+function offViewNote(who){return inScope(who)?'':' Saved under '+member(who).name+'. It does not change the '+scopeLabel()+' view.'}
+function whoCard(m){
+ if(!multi()||S.scope!=='all')return '';
+ var rows=S.members.map(function(mb){
+  var t=totals(m,mb.id),pct=t.inc>0?Math.min(100,t.exp/t.inc*100):(t.exp>0?100:0);
+  return '<li class="who"><div class="l"><span class="n"><i class="dot" style="background:'+mb.color+'"></i><b>'+esc(mb.name)+'</b></span><span class="small muted">Earned '+inr(t.inc)+' · Spent '+inr(t.exp)+'</span></div>'+
+   '<div class="bar"><i style="width:'+pct.toFixed(0)+'%;background:'+mb.color+'"></i></div><div class="small'+(t.sav<0?' neg':' muted')+'" style="margin-top:4px">Left '+inr(t.sav)+'</div></li>';
+ }).join('');
+ var h=totals(m,'all');
+ return '<section class="card span2"><h2>Who earned and spent what <small>'+monthLabel(m)+'</small></h2><ul class="list">'+rows+'</ul><p class="small muted" style="margin-top:8px">Household total: earned '+inr(h.inc)+', spent '+inr(h.exp)+', left '+inr(h.sav)+'.</p></section>';
+}
+function renderViews(){
+ var box=$('#views'),show=multi()&&['dashboard','expenses','income','investments','categories'].indexOf(view)>=0;
+ box.hidden=!show;
+ if(!show){box.innerHTML='';return}
+ function chip(id,name,color){return '<button class="vchip" data-act="view-set" data-id="'+id+'" aria-pressed="'+(S.scope===id)+'">'+(color?'<i class="dot" style="background:'+color+'"></i>':'')+esc(name)+'</button>'}
+ box.innerHTML='<span class="vlbl">View</span>'+S.members.map(function(m){return chip(m.id,m.name,m.color)}).join('')+chip('all','Household','');
+}
+function membersCard(){
+ return '<section class="card sec"><h3>Family members</h3><p class="muted small">Add everyone who earns or pays for things at home. Each income and expense belongs to one person, so their money stays separate. Switch between a person and the combined Household view at the top. Your own totals only change when an entry is yours.</p><ul class="list">'+
+  S.members.map(function(m){return '<li class="row"><div class="brow" style="display:flex;align-items:center;gap:10px"><i class="dot" style="background:'+m.color+'"></i><b style="flex:1;min-width:0;overflow-wrap:anywhere">'+esc(m.name)+(m.id===OWNER?' <span class="muted small">(owner)</span>':'')+'</b></div>'+
+   '<button class="icon-btn" data-act="edit-mem" data-id="'+m.id+'" aria-label="Edit '+esc(m.name)+'">'+icon('edit')+'</button>'+
+   (m.id===OWNER?'':'<button class="icon-btn" data-act="del-mem" data-id="'+m.id+'" aria-label="Remove '+esc(m.name)+'">'+icon('trash')+'</button>')+'</li>'}).join('')+
+  '</ul><div class="btns"><button class="btn primary" data-act="add-mem">'+icon('plus')+'Add member</button></div></section>';
+}
+function memberModal(id){
+ var m=id?S.members.filter(function(x){return x.id===id})[0]:null,col=m?m.color:MCOL[S.members.length%MCOL.length];
+ var sw=MCOL.concat(m&&MCOL.indexOf(m.color)<0?[m.color]:[]).map(function(p){return '<label class="sw"><input type="radio" name="mcol" value="'+p+'"'+(p===col?' checked':'')+'><span style="background:'+p+'" title="'+p+'"></span></label>'}).join('');
+ openModal({title:m?'Edit member':'Add family member',submit:m?'Save changes':'Add member',
+  body:'<label class="fld"><span>Name</span><input id="m_name" maxlength="30" autocomplete="off" placeholder="e.g. Ravi" value="'+esc(m?m.name:'')+'"></label>'+
+   '<fieldset class="fld"><legend>Colour</legend><div class="sws" role="radiogroup" aria-label="Colour">'+sw+'</div></fieldset>'+
+   (m?'':'<p class="muted small">Their income and the expenses they pay stay separate from yours.</p>'),
+  onSubmit:function(f){
+   var n=$('#m_name').value.trim().slice(0,30);if(!n)return 'Enter a name.';
+   var dup=S.members.some(function(x){return x.name.toLowerCase()===n.toLowerCase()&&(!m||x.id!==m.id)});if(dup)return 'You already have a member called '+n+'.';
+   var cr=f.querySelector('input[name=mcol]:checked'),color=cr?cr.value:col;
+   if(m){m.name=n;m.color=color}else S.members.push({id:uid(),name:n,color:color});
+   save();render();toast(m?'Member saved.':'Added '+n+'. Use the View chips at the top to switch between people.');
+  }});
+}
+function deleteMemberFlow(id){
+ var m=S.members.filter(function(x){return x.id===id})[0];if(!m||id===OWNER)return;
+ function mine(w){return (w||OWNER)===id}
+ var ne=S.expenses.filter(function(e){return mine(e.who)}).length,
+  ni=sum(Object.keys(S.income),function(k){return S.income[k].filter(function(i){return mine(i.who)}).length}),
+  nr=S.recurring.filter(function(r){return mine(r.who)}).length,
+  nv=S.investments.filter(function(v){return mine(v.who)}).length,others=S.members.filter(function(x){return x.id!==id}),any=ne+ni+nr+nv>0;
+ var body=any?'<p class="small"><b>'+esc(m.name)+'</b> has '+ne+' expense'+(ne===1?'':'s')+', '+ni+' income entr'+(ni===1?'y':'ies')+' and '+nr+' recurring item'+(nr===1?'':'s')+' and '+nv+' investment'+(nv===1?'':'s')+'. Choose what happens to them.</p>'+
+   '<label class="fld"><span class="sr">What to do with their entries</span><select id="mv_who"><option value="__del">Delete these entries</option>'+others.map(function(o){return '<option value="'+o.id+'">Move to '+esc(o.name)+'</option>'}).join('')+'</select></label><p class="muted small">Moving entries adds them to that person’s totals.</p>'
+  :'<p class="small">'+esc(m.name)+' has no entries.</p>';
+ openModal({title:'Remove '+m.name+'?',submit:'Remove member',body:body,onSubmit:function(){
+  var to=any?$('#mv_who').value:'__del';
+  if(to==='__del'){
+   S.expenses=S.expenses.filter(function(e){return !mine(e.who)});
+   Object.keys(S.income).forEach(function(k){S.income[k]=S.income[k].filter(function(i){return !mine(i.who)});if(!S.income[k].length)delete S.income[k]});
+   S.recurring=S.recurring.filter(function(r){return !mine(r.who)});S.investments=S.investments.filter(function(v){return !mine(v.who)});
+  }else{
+   S.expenses.forEach(function(e){if(mine(e.who))e.who=to});
+   Object.keys(S.income).forEach(function(k){S.income[k].forEach(function(i){if(mine(i.who))i.who=to})});
+   S.recurring.forEach(function(r){if(mine(r.who))r.who=to});S.investments.forEach(function(v){if(mine(v.who))v.who=to});
+  }
+  S.members=S.members.filter(function(x){return x.id!==id});
+  if(S.scope===id)S.scope=OWNER;
+  save();render();toast(m.name+' removed.');
+ }});
+}
+
+/* ---------- views ---------- */
+function emptyState(title,text,btn){return '<div class="empty"><b>'+esc(title)+'</b><p>'+esc(text)+'</p>'+(btn||'')+'</div>'}
+
+function niceScale(max,ticks){
+ if(!(max>0))max=100000;
+ var raw=max/ticks,mag=Math.pow(10,Math.floor(Math.log10(raw))),n=raw/mag;
+ var step=(n<=1?1:n<=2?2:n<=2.5?2.5:n<=5?5:10)*mag;
+ return {step:step,max:Math.ceil(max/step-1e-9)*step};
+}
+
+function donut(m){
+ var sp=spendByCat(m),arr=Object.keys(sp).map(function(k){return {c:cat(k),v:sp[k]}}).sort(function(a,b){return b.v-a.v});
+ var total=sum(arr,function(a){return a.v});
+ if(!total)return emptyState('No spending yet','Expenses you add for '+monthLabel(m)+' will be split by category here.');
+ var r=64,circ=2*Math.PI*r,acc=0,segs='';
+ arr.forEach(function(a){
+  var len=a.v/total*circ,dash=Math.max(0.5,len-(arr.length>1?2:0));
+  segs+='<circle cx="90" cy="90" r="'+r+'" fill="none" stroke="'+a.c.color+'" stroke-width="26" stroke-dasharray="'+dash.toFixed(2)+' '+(circ-dash).toFixed(2)+'" stroke-dashoffset="'+(-acc).toFixed(2)+'" transform="rotate(-90 90 90)"><title>'+esc(a.c.name)+': '+inr(a.v)+'</title></circle>';
+  acc+=len;
+ });
+ var leg=arr.map(function(a){return '<li><i class="dot" style="background:'+a.c.color+'"></i><span>'+esc(a.c.name)+'</span><b>'+inr(a.v)+'</b><span class="pc">'+Math.round(a.v/total*100)+'%</span></li>'}).join('');
+ return '<div class="donutwrap"><svg viewBox="0 0 180 180" role="img" aria-label="Spending by category for '+monthLabel(m)+', total '+inr(total)+'">'+segs+
+  '<text x="90" y="86" text-anchor="middle" class="ax" style="font-size:11px">Spent</text><text x="90" y="104" text-anchor="middle" class="cn" style="font-size:14px;font-weight:700">'+inrShort(total)+'</text></svg><ul class="dleg">'+leg+'</ul></div>';
+}
+
+function dailyChart(m){
+ var n=daysIn(m),days=[],i;for(i=0;i<n;i++)days.push(0);
+ monthExpenses(m).forEach(function(e){days[+e.date.slice(8,10)-1]+=e.amount});
+ var mx=Math.max.apply(null,days);
+ if(mx<=0)return emptyState('Nothing spent yet','Daily spending bars appear once you log an expense.');
+ var sc=niceScale(mx,3),W=360,H=190,L=46,R=8,T=10,B=22,pw=W-L-R,ph=H-T-B,slot=pw/n,bw=Math.max(2,slot*.68),g='',steps=Math.round(sc.max/sc.step);
+ for(i=0;i<=steps;i++){var v=i*sc.step,y=T+ph-(v/sc.max)*ph;g+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+y.toFixed(1)+'" y2="'+y.toFixed(1)+'" class="grid"/><text x="'+(L-6)+'" y="'+(y+3).toFixed(1)+'" text-anchor="end" class="ax">'+inrShort(v)+'</text>'}
+ var bars='';
+ for(i=0;i<n;i++){if(days[i]>0){var h=days[i]/sc.max*ph,x=L+i*slot+(slot-bw)/2;
+  bars+='<rect x="'+x.toFixed(1)+'" y="'+(T+ph-h).toFixed(1)+'" width="'+bw.toFixed(1)+'" height="'+h.toFixed(1)+'" rx="1.5" class="bar-exp"><title>'+fmtDate(m+'-'+pad(i+1))+': '+inr(days[i])+'</title></rect>'}}
+ var xl=[1,5,10,15,20,25],lbl='';if(n-25>=4)xl.push(n);else if(n>25&&xl.indexOf(n)<0&&n-25>=3)xl.push(n);
+ xl.forEach(function(d){if(d<=n)lbl+='<text x="'+(L+(d-1)*slot+slot/2).toFixed(1)+'" y="'+(H-6)+'" text-anchor="middle" class="ax">'+d+'</text>'});
+ return '<svg class="chart" viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Daily spending in '+monthLabel(m)+', highest day '+inr(mx)+'">'+g+bars+lbl+'</svg>';
+}
+
+function trendChart(m){
+ var ms=[],i;for(i=5;i>=0;i--)ms.push(addMonths(m,-i));
+ var data=ms.map(function(x){var t=totals(x);return {m:x,inc:t.inc,exp:t.exp,sav:t.sav}});
+ var any=data.some(function(d){return d.inc||d.exp});
+ if(!any)return emptyState('No history yet','Add income and expenses to see the last six months side by side.');
+ var hi=0,lo=0;data.forEach(function(d){hi=Math.max(hi,d.inc,d.exp,d.sav);lo=Math.min(lo,d.sav)});
+ var sc=niceScale(hi-lo,4),step=sc.step,top=Math.ceil(hi/step-1e-9)*step,bot=lo<0?Math.floor(lo/step+1e-9)*step:0;
+ if(top===bot)top=bot+step;
+ var W=360,H=210,L=46,R=8,T=10,B=24,pw=W-L-R,ph=H-T-B,slot=pw/6;
+ function Y(v){return T+(top-v)/(top-bot)*ph}
+ var g='',k,cnt=Math.round((top-bot)/step);
+ for(k=0;k<=cnt;k++){var v=bot+k*step,y=Y(v);g+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+y.toFixed(1)+'" y2="'+y.toFixed(1)+'" class="grid"/><text x="'+(L-6)+'" y="'+(y+3).toFixed(1)+'" text-anchor="end" class="ax">'+inrShort(v)+'</text>'}
+ var bars='',pts=[],labs='',bw=Math.min(18,slot*.3);
+ data.forEach(function(d,j){
+  var cx=L+j*slot+slot/2,y0=Y(0);
+  if(d.inc>0)bars+='<rect x="'+(cx-bw-1).toFixed(1)+'" y="'+Y(d.inc).toFixed(1)+'" width="'+bw.toFixed(1)+'" height="'+(y0-Y(d.inc)).toFixed(1)+'" rx="2" class="bar-inc"><title>'+monthLabel(d.m)+' income: '+inr(d.inc)+'</title></rect>';
+  if(d.exp>0)bars+='<rect x="'+(cx+1).toFixed(1)+'" y="'+Y(d.exp).toFixed(1)+'" width="'+bw.toFixed(1)+'" height="'+(y0-Y(d.exp)).toFixed(1)+'" rx="2" class="bar-exp"><title>'+monthLabel(d.m)+' expenses: '+inr(d.exp)+'</title></rect>';
+  pts.push([cx,Y(d.sav),d]);
+  labs+='<text x="'+cx.toFixed(1)+'" y="'+(H-7)+'" text-anchor="middle" class="ax"'+(d.m===m?' style="font-weight:700;fill:var(--ink)"':'')+'>'+monthShort(d.m)+'</text>';
+ });
+ var line='<polyline class="ln-sav" points="'+pts.map(function(p){return p[0].toFixed(1)+','+p[1].toFixed(1)}).join(' ')+'"/>'+
+  pts.map(function(p){return '<circle cx="'+p[0].toFixed(1)+'" cy="'+p[1].toFixed(1)+'" r="3.5" class="pt-sav"><title>'+monthLabel(p[2].m)+' savings: '+inr(p[2].sav)+'</title></circle>'}).join('');
+ return '<svg class="chart" viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Income, expenses and savings for the six months ending '+monthLabel(m)+'">'+g+bars+line+labs+'</svg>'+
+  '<div class="legend"><span><i style="background:var(--c-income)"></i>Income</span><span><i style="background:var(--c-expense)"></i>Expenses</span><span><i style="background:var(--c-save);border-radius:50%"></i>Savings</span></div>';
+}
+
+function cmpRow(label,cur,prev,goodUp,color,tot){
+ var chip,d=cur-prev;
+ if(!prev&&!cur)chip='<span class="pill">–</span>';
+ else if(!prev)chip='<span class="pill">New</span>';
+ else{var pc=Math.round(Math.abs(d)/Math.abs(prev)*100),up=d>0,cls=d===0?'':((up===goodUp)?'good':'bad');
+  chip='<span class="pill '+cls+'">'+(d===0?'Same':(up?'▲ ':'▼ ')+pc+'%')+'</span>'}
+ return '<li class="cmp'+(tot?' tot':'')+'"><span class="n">'+(color?'<i class="dot" style="background:'+color+'"></i>':'')+esc(label)+'</span><span class="v"><b>'+inr(cur)+'</b><small>was '+inr(prev)+'</small></span>'+chip+'</li>';
+}
+function compareCard(m){
+ var pm=addMonths(m,-1),t=totals(m),p=totals(pm);
+ if(!p.inc&&!p.exp)return '<p class="muted small">There is no data for '+monthLabel(pm)+', so there is nothing to compare yet.</p>';
+ var c1=spendByCat(m),c0=spendByCat(pm),ids={};Object.keys(c1).concat(Object.keys(c0)).forEach(function(k){ids[k]=1});
+ var rows=Object.keys(ids).sort(function(a,b){return (c1[b]||0)-(c1[a]||0)||(c0[b]||0)-(c0[a]||0)});
+ return '<ul class="list">'+cmpRow('Income',t.inc,p.inc,true,'',true)+cmpRow('Expenses',t.exp,p.exp,false,'',true)+cmpRow('Savings',t.sav,p.sav,true,'',true)+
+  rows.map(function(id){var c=cat(id);return cmpRow(c.name,c1[id]||0,c0[id]||0,false,c.color)}).join('')+'</ul>';
+}
+
+function budgetAlerts(m){
+ var sp=spendByCat(m),withB=S.categories.filter(function(c){return c.budget});
+ if(!withB.length)return '<p class="muted small">No budget limits yet. Add one to a category and Hisaab will warn you at 80% and when you go over.</p><div class="btns"><a class="btn sm" href="#categories">Set budgets</a></div>';
+ var hot=withB.map(function(c){return {c:c,s:sp[c.id]||0,r:(sp[c.id]||0)/c.budget}}).filter(function(x){return x.r>=0.8}).sort(function(a,b){return b.r-a.r});
+ if(!hot.length)return '<p class="small"><span class="pill good">On track</span> All '+withB.length+' budget'+(withB.length>1?'s are':' is')+' under 80% for '+monthLabel(m)+'.</p>';
+ return '<ul class="list">'+hot.map(function(x){var over=x.r>1,pct=Math.round(x.r*100);
+  return '<li class="row"><div class="brow"><div class="l"><span class="n" style="display:flex;gap:8px;align-items:center"><i class="dot" style="background:'+x.c.color+'"></i><b>'+esc(x.c.name)+'</b></span><span class="pill '+(over?'bad':'warn')+'">'+(over?'Over by '+inr(x.s-x.c.budget):pct+'% used')+'</span></div>'+
+  '<div class="bar"><i class="'+(over?'bad':'warn')+'" style="width:'+Math.min(100,pct)+'%"></i></div><small class="muted">'+inr(x.s)+' of '+inr(x.c.budget)+'</small></div></li>'}).join('')+'</ul>';
+}
+
+function sampleBanner(){
+ if(!hasSample())return '';
+ return '<div class="sample"><span>You are looking at sample data. Your own entries are kept when you clear it.</span><button class="btn sm" data-act="sample-clear">Clear sample data</button></div>';
+}
+function hasSample(){
+ return S.investments.some(function(v){return v.s})||S.expenses.some(function(e){return e.s})||S.recurring.some(function(r){return r.s})||Object.keys(S.income).some(function(m){return S.income[m].some(function(i){return i.s})});
+}
+
+function vDashboard(){
+ var t=totals(month),el=daysElapsed(month),avg=el?Math.round(t.exp/el):null,h='';
+ h+=sampleBanner();
+ var spentPct=t.inc>0?Math.min(100,t.exp/t.inc*100):0,savedPct=t.inc>0?Math.max(0,100-spentPct):0;
+ h+='<section class="card hero"><div class="top"><div><p class="eyebrow">'+(multi()?esc(scopeLabel())+' · ':'')+'Saved in '+monthLabel(month)+'</p><p class="big'+(t.sav<0?' neg':'')+'">'+inr(t.sav)+'</p></div>'+
+  (t.rate==null?'':'<span class="pill '+(t.sav<0?'bad':'good')+'">'+Math.round(t.rate*100)+'% of income</span>')+'</div>';
+ if(t.inc>0){
+  h+='<div class="split" role="img" aria-label="'+Math.round(spentPct)+' percent of income spent"><i class="sp" style="width:'+spentPct.toFixed(1)+'%"></i><i class="sv" style="width:'+savedPct.toFixed(1)+'%"></i></div>'+
+   '<div class="splitlbl"><span>Spent '+inr(t.exp)+'</span><span>'+(t.sav<0?'Overspent by '+inr(-t.sav):'Left '+inr(t.sav))+'</span></div>';
+ }else{
+  h+='<div class="panel"><span class="small">Add your income for '+monthLabel(month)+' to see how much you are saving.</span><div class="btns"><button class="btn primary sm" data-act="add-inc">'+icon('plus')+'Add income</button>'+
+   (S.income[addMonths(month,-1)]&&S.income[addMonths(month,-1)].length?'<button class="btn sm" data-act="copy-inc">Copy from '+monthShort(addMonths(month,-1))+'</button>':'')+'</div></div>';
+ }
+ h+='<div class="stats"><div><b>'+inr(t.inc)+'</b><span>Income</span></div><div><b>'+inr(t.exp)+'</b><span>Expenses</span></div><div><b>'+(avg==null?'–':inr(avg))+'</b><span>Avg per day</span></div></div></section>';
+ h+='<div class="grid2">'+whoCard(month)+'<section class="card"><h2>Budget watch</h2>'+budgetAlerts(month)+'</section>'+invCard()+
+  '<section class="card"><h2>Spending by category <small>'+monthLabel(month)+'</small></h2>'+donut(month)+'</section>'+
+  '<section class="card"><h2>Daily spending <small>'+monthLabel(month)+'</small></h2>'+dailyChart(month)+'</section>'+
+  '<section class="card"><h2>This month vs last <small>'+monthShort(month)+' vs '+monthShort(addMonths(month,-1))+'</small></h2>'+compareCard(month)+'</section>'+
+  '<section class="card span2"><h2>Last six months</h2>'+trendChart(month)+'</section></div>';
+ return h;
+}
+
+/* expenses */
+function filtered(){
+ var useMonth=F.scope==='month'&&!F.from&&!F.to,q=F.q.trim().toLowerCase(),mn=F.min!==''?parseAmt(F.min):null,mx=F.max!==''?parseAmt(F.max):null;
+ return S.expenses.map(function(e,i){return {e:e,i:i}}).filter(function(x){
+  var e=x.e;
+  if(!inScope(e.who))return false;
+  if(useMonth&&e.date.slice(0,7)!==month)return false;
+  if(F.cat&&e.catId!==F.cat)return false;
+  if(q&&(e.note||'').toLowerCase().indexOf(q)<0&&cat(e.catId).name.toLowerCase().indexOf(q)<0)return false;
+  if(F.from&&e.date<F.from)return false;if(F.to&&e.date>F.to)return false;
+  if(mn!=null&&e.amount<mn)return false;if(mx!=null&&e.amount>mx)return false;
+  return true;
+ }).sort(function(a,b){return a.e.date<b.e.date?1:a.e.date>b.e.date?-1:b.i-a.i}).map(function(x){return x.e});
+}
+function filtersActive(){return !!(F.q||F.cat||F.from||F.to||F.min||F.max||F.scope==='all')}
+function listHtml(){
+ var rows=filtered();
+ if(!rows.length){
+  if(filtersActive())return '<div class="card">'+emptyState('No matching expenses','Try a different search or clear the filters.','<button class="btn" data-act="filters-clear">Clear filters</button>')+'</div>';
+  return '<div class="card">'+emptyState('No expenses in '+monthLabel(month),'Log your first expense for this month. It takes a few seconds.','<button class="btn primary" data-act="add-exp">'+icon('plus')+'Add expense</button>')+'</div>';
+ }
+ var total=sum(rows,function(e){return e.amount}),h='<div class="card"><div class="sumline"><span>'+rows.length+' expense'+(rows.length>1?'s':'')+'</span><b>'+inr(total)+'</b></div><ul class="list">',last='',dayTot={};
+ rows.forEach(function(e){dayTot[e.date]=(dayTot[e.date]||0)+e.amount});
+ rows.forEach(function(e){
+  if(e.date!==last){last=e.date;h+='<li class="dayh" aria-hidden="false"><span>'+dayLabel(e.date)+'</span><span>'+inr(dayTot[e.date])+'</span></li>'}
+  var c=cat(e.catId);
+  h+='<li class="row"><button class="row-main" data-act="edit-exp" data-id="'+e.id+'" aria-label="Edit expense '+esc(e.note||c.name)+', '+inr(e.amount)+'"><i class="dot" style="background:'+c.color+'"></i><span class="row-t"><b>'+esc(e.note||c.name)+'</b><small>'+esc(c.name)+(e.recId?' · Recurring':'')+(multi()&&S.scope==='all'?' · Paid by '+esc(member(e.who).name):'')+'</small></span><span class="amt">'+inr(e.amount)+'</span></button>'+
+   '<button class="icon-btn" data-act="del-exp" data-id="'+e.id+'" aria-label="Delete expense">'+icon('trash')+'</button></li>';
+ });
+ return h+'</ul></div>';
+}
+function vExpenses(){
+ var adv=!!(F.from||F.to||F.min||F.max);
+ var h='<section class="card filters" id="filters"><label class="search"><span class="sr">Search expenses</span>'+icon('search')+'<input id="fl_q" type="search" placeholder="Search notes or categories" value="'+esc(F.q)+'"></label>'+
+  '<div class="frow"><label class="fld"><span>Category</span><select id="fl_cat"><option value="">All categories</option>'+S.categories.map(function(c){return '<option value="'+c.id+'"'+(F.cat===c.id?' selected':'')+'>'+esc(c.name)+'</option>'}).join('')+'</select></label>'+
+  '<label class="fld"><span>Show</span><select id="fl_scope"><option value="month"'+(F.scope==='month'?' selected':'')+'>'+monthLabel(month)+'</option><option value="all"'+(F.scope==='all'?' selected':'')+'>All time</option></select></label></div>'+
+  '<details'+(adv?' open':'')+'><summary>Date and amount filters</summary><div class="frow"><label class="fld"><span>From date</span><input id="fl_from" type="date" value="'+esc(F.from)+'"></label><label class="fld"><span>To date</span><input id="fl_to" type="date" value="'+esc(F.to)+'"></label></div>'+
+  '<div class="frow" style="margin-top:10px"><label class="fld"><span>Min amount (₹)</span><input id="fl_min" inputmode="decimal" value="'+esc(F.min)+'" placeholder="0"></label><label class="fld"><span>Max amount (₹)</span><input id="fl_max" inputmode="decimal" value="'+esc(F.max)+'" placeholder="Any"></label></div></details>'+
+  '<div><button class="btn sm" data-act="filters-clear" id="fl_clear"'+(filtersActive()?'':' hidden')+'>Clear filters</button></div></section><div id="expList">'+listHtml()+'</div>';
+ return h;
+}
+
+/* income */
+function vIncome(){
+ var list=(S.income[month]||[]).filter(function(i){return inScope(i.who)}),tot=monthIncome(month),pm=addMonths(month,-1),canCopy=!list.length&&(S.income[pm]||[]).some(function(i){return inScope(i.who)});
+ var h=sampleBanner()+'<section class="card"><h2><span>Income in '+monthLabel(month)+(multi()?' <small>'+esc(scopeLabel())+'</small>':'')+'</span><b>'+inr(tot)+'</b></h2>';
+ if(!list.length){
+  h+=emptyState('No income added','List every source you were paid from this month, such as salary, freelance work or rent received.',
+   '<div class="btns" style="justify-content:center"><button class="btn primary" data-act="add-inc">'+icon('plus')+'Add income source</button>'+(canCopy?'<button class="btn" data-act="copy-inc">Copy from '+monthLabel(pm)+'</button>':'')+'</div>');
+ }else{
+  h+='<ul class="list">'+list.map(function(i){return '<li class="row"><button class="row-main" data-act="edit-inc" data-id="'+i.id+'" aria-label="Edit '+esc(i.name)+'"><span class="row-t"><b>'+esc(i.name)+'</b><small>'+(multi()&&S.scope==='all'?esc(member(i.who).name)+' · ':'')+Math.round(i.amount/tot*100)+'% of this month’s income</small></span><span class="amt">'+inr(i.amount)+'</span></button><button class="icon-btn" data-act="del-inc" data-id="'+i.id+'" aria-label="Delete income source">'+icon('trash')+'</button></li>'}).join('')+'</ul>'+
+   '<div class="btns" style="margin-top:12px"><button class="btn primary" data-act="add-inc">'+icon('plus')+'Add income source</button></div>';
+ }
+ h+='</section>';
+ if(!multi())h+='<section class="card"><h2>Earning together?</h2><p class="muted small">If more people in your family earn, add them as members to see a combined household income. Their entries stay separate from yours.</p><div class="btns" style="margin-top:10px"><button class="btn" data-act="add-mem">Add a family member</button></div></section>';
+ return h;
+}
+
+/* investments */
+function invList(){return S.investments.filter(function(v){return inScope(v.who)})}
+function invTotals(l){var i=sum(l,function(v){return v.invested}),c=sum(l,function(v){return v.value});return {inv:i,cur:c,gain:c-i,pct:i>0?(c-i)/i*100:null}}
+function invCol(k){return INV_COL[INV_TYPES.indexOf(k)]||'#8C8C8C'}
+function gainCls(n){return n>0?'gain':n<0?'loss':''}
+function gainTxt(n,p){return (n>0?'+':'')+inr(n)+(p==null?'':' ('+(n>0?'+':'')+p.toFixed(1)+'%)')}
+function investedIn(l,m){return sum(l.filter(function(v){return v.date.slice(0,7)===m}),function(v){return v.invested})}
+function invCard(){
+ var l=invList(),t=invTotals(l),mi=investedIn(l,month),left=totals(month).sav-mi;
+ return '<section class="card"><h2>Investments <a class="link" href="#investments">Open</a></h2>'+
+  (l.length?'<div class="cmp"><span class="n">Portfolio value</span><span class="v"><b>'+inr(t.cur)+'</b></span><span></span></div><div class="cmp"><span class="n">Gain / loss</span><span class="v"><b class="'+gainCls(t.gain)+'">'+gainTxt(t.gain,t.pct)+'</b></span><span></span></div>':'<p class="muted small">Track SIPs, stocks, gold and more.</p>')+
+  '<div class="cmp"><span class="n">Invested in '+monthShort(month)+'</span><span class="v"><b>'+inr(mi)+'</b></span><span></span></div><div class="cmp"><span class="n">Savings left after investing</span><span class="v"><b class="'+gainCls(left)+'">'+inr(left)+'</b></span><span></span></div></section>';
+}
+function vInvestments(){
+ var l=invList(),t=invTotals(l),h=sampleBanner();
+ h+='<section class="card hero"><div class="top"><div><p class="eyebrow">'+(multi()?esc(scopeLabel())+' · ':'')+'Portfolio value</p><p class="big">'+inr(t.cur)+'</p></div>'+(t.pct==null?'':'<span class="pill '+(t.gain<0?'bad':'good')+'">'+(t.gain>=0?'▲ ':'▼ ')+Math.abs(t.pct).toFixed(1)+'%</span>')+'</div>'+
+  '<div class="stats"><div><b>'+inr(t.inv)+'</b><span>Invested</span></div><div><b class="'+gainCls(t.gain)+'">'+gainTxt(t.gain)+'</b><span>Gain / loss</span></div><div><b>'+l.length+'</b><span>Holdings</span></div></div></section>';
+ if(!l.length)return h+'<div class="card">'+emptyState('No investments yet','Add SIPs, stocks, gold, fixed deposits and more to see your portfolio here.','<button class="btn primary" data-act="add-inv">'+icon('plus')+'Add investment</button>')+'</div>';
+ var by={};l.forEach(function(v){by[v.type]=(by[v.type]||0)+v.value});
+ var types=Object.keys(by).sort(function(a,b){return by[b]-by[a]}),mi=investedIn(l,month),inc=monthIncome(month);
+ h+='<div class="grid2"><section class="card"><h2>Allocation</h2>'+(t.cur>0?types.map(function(k){var p=by[k]/t.cur*100;return '<div style="margin-bottom:10px"><div class="sumline"><span><i class="dot" style="background:'+invCol(k)+'"></i> '+esc(k)+'</span><span><b>'+inr(by[k])+'</b> · '+Math.round(p)+'%</span></div><div class="bar"><i style="width:'+p.toFixed(0)+'%;background:'+invCol(k)+'"></i></div></div>'}).join(''):'<p class="muted small">Current values are zero.</p>')+'</section>'+
+  '<section class="card"><h2>Invested in '+monthLabel(month)+'</h2><p class="big" style="font-size:30px">'+inr(mi)+'</p><p class="muted small">'+(inc>0?Math.round(mi/inc*100)+'% of this month’s income.':'Add income to see what share you invest.')+'</p></section></div>';
+ h+='<section class="card"><h2>Holdings</h2><ul class="list">';
+ INV_TYPES.forEach(function(k){
+  var g=l.filter(function(v){return v.type===k});if(!g.length)return;
+  h+='<li class="dayh"><span>'+esc(k)+'</span><span>'+inr(invTotals(g).cur)+'</span></li>';
+  g.sort(function(a,b){return b.value-a.value}).forEach(function(v){
+   var d=v.value-v.invested;
+   h+='<li class="row"><button class="row-main" data-act="edit-inv" data-id="'+v.id+'" aria-label="Edit '+esc(v.name)+'"><i class="dot" style="background:'+invCol(v.type)+'"></i><span class="row-t"><b>'+esc(v.name)+'</b><small>Invested '+inr(v.invested)+' · '+fmtDate(v.date)+(multi()&&S.scope==='all'?' · '+esc(member(v.who).name):'')+'</small></span><span class="amt">'+inr(v.value)+'<small class="'+gainCls(d)+'">'+gainTxt(d,v.invested>0?d/v.invested*100:null)+'</small></span></button>'+
+    '<button class="icon-btn" data-act="del-inv" data-id="'+v.id+'" aria-label="Delete investment">'+icon('trash')+'</button></li>';
+  });
+ });
+ return h+'</ul><div class="btns" style="margin-top:12px"><button class="btn primary" data-act="add-inv">'+icon('plus')+'Add investment</button></div></section><p class="muted small">Update the current value from time to time by tapping a holding. Gain or loss is current value minus amount invested.</p>';
+}
+function invModal(id){
+ var v=id?S.investments.filter(function(x){return x.id===id})[0]:null;
+ openModal({title:v?'Edit investment':'Add investment',submit:v?'Save changes':'Save',
+  body:'<label class="fld"><span>Name</span><input id="v_name" maxlength="40" autocomplete="off" placeholder="e.g. Nifty 50 index fund" value="'+esc(v?v.name:'')+'"></label>'+
+   '<label class="fld"><span>Type</span><select id="v_type">'+INV_TYPES.map(function(t){return '<option'+(v&&v.type===t?' selected':'')+'>'+esc(t)+'</option>'}).join('')+'</select></label>'+
+   '<div class="frow"><label class="fld"><span>Invested (₹)</span><input id="v_inv" inputmode="decimal" autocomplete="off" placeholder="0" value="'+(v?rupeesStr(v.invested):'')+'"></label>'+
+   '<label class="fld"><span>Current value (₹)</span><input id="v_val" inputmode="decimal" autocomplete="off" placeholder="Same as invested" value="'+(v?rupeesStr(v.value):'')+'"></label></div>'+
+   '<label class="fld"><span>Date</span><input id="v_date" type="date" value="'+(v?v.date:today())+'"></label>'+whoField(v?(v.who||OWNER):defWho(),'Owner'),
+  onSubmit:function(f){
+   var n=$('#v_name').value.trim().slice(0,40);if(!n)return 'Give this investment a name.';
+   var a=parseAmt($('#v_inv').value),er=amountErr(a);if(er)return er;
+   var rv=$('#v_val').value.trim(),c=rv===''?a:parseAmt(rv);if(c==null||c>MAXP)return 'Enter the current value as a number, or leave it blank.';
+   var d=$('#v_date').value;if(!validDate(d))return 'Pick a valid date.';
+   var who=checkedWho(f),t=$('#v_type').value;
+   if(v){v.name=n;v.type=t;v.invested=a;v.value=c;v.date=d;v.who=who}else S.investments.push({id:uid(),name:n,type:t,invested:a,value:c,date:d,who:who});
+   lastWho=who;save();render();toast(offViewNote(who).trim()||'Investment saved.');
+  }});
+}
+
+/* categories & budgets */
+function vCategories(){
+ var sp=spendByCat(month);
+ var h='<section class="card"><h2>Categories and budgets <small>Spending for '+monthLabel(month)+'</small></h2><ul class="list">'+S.categories.map(function(c){
+  var s=sp[c.id]||0,r=c.budget?s/c.budget:0,cls=r>1?'bad':r>=0.8?'warn':'';
+  var status=c.budget?(r>1?'<span class="pill bad">Over by '+inr(s-c.budget)+'</span>':r>=0.8?'<span class="pill warn">'+Math.round(r*100)+'% used</span>':'<span class="pill">'+Math.round(r*100)+'% used</span>'):'<span class="pill">No limit</span>';
+  return '<li class="row"><button class="row-main" data-act="edit-cat" data-id="'+c.id+'" aria-label="Edit category '+esc(c.name)+'" style="align-items:flex-start"><i class="dot" style="background:'+c.color+';margin-top:7px"></i><span class="row-t"><b>'+esc(c.name)+'</b><small>'+inr(s)+(c.budget?' of '+inr(c.budget):' spent')+'</small>'+
+   (c.budget?'<div class="bar"><i class="'+cls+'" style="width:'+Math.min(100,r*100).toFixed(0)+'%"></i></div>':'')+'</span>'+status+'</button></li>'}).join('')+'</ul>'+
+  '<div class="btns" style="margin-top:12px"><button class="btn primary" data-act="add-cat">'+icon('plus')+'Add category</button></div></section>'+
+  '<p class="muted small">A budget is a monthly limit. Leave it blank for no limit. You will see a warning at 80% and again when you pass 100%.'+(multi()?' Progress shows spending for the view you are in ('+esc(scopeLabel())+').':'')+'</p>';
+ return h;
+}
+
+/* recurring */
+function vRecurring(){
+ var h='<section class="card"><h2>Recurring expenses</h2>';
+ if(!S.recurring.length)h+=emptyState('Nothing recurring yet','Add rent, subscriptions or EMIs once. Hisaab logs them on their due day every month.','<button class="btn primary" data-act="add-rec">'+icon('plus')+'Add recurring expense</button>');
+ else h+='<ul class="list">'+S.recurring.map(function(r){var c=cat(r.catId);
+  return '<li class="row"><button class="row-main" data-act="edit-rec" data-id="'+r.id+'" aria-label="Edit '+esc(r.name)+'"><i class="dot" style="background:'+c.color+(r.active?'':';opacity:.4')+'"></i><span class="row-t"><b>'+esc(r.name)+'</b><small>Day '+r.day+' · '+esc(c.name)+(multi()?' · '+esc(member(r.who).name):'')+(r.active?'':' · Paused')+'</small></span><span class="amt">'+inr(r.amount)+'</span></button>'+
+   '<button class="sw-tog" role="switch" aria-checked="'+(r.active?'true':'false')+'" aria-label="'+esc(r.name)+' active" data-act="toggle-rec" data-id="'+r.id+'"></button>'+
+   '<button class="icon-btn" data-act="del-rec" data-id="'+r.id+'" aria-label="Delete recurring expense">'+icon('trash')+'</button></li>'}).join('')+'</ul><div class="btns" style="margin-top:12px"><button class="btn primary" data-act="add-rec">'+icon('plus')+'Add recurring expense</button></div>';
+ return h+'</section><p class="muted small">Each item is added once per month on its due day, or on the last day of shorter months. Changes affect future months only. Entries already logged stay as they are.</p>';
+}
+
+/* settings & backup */
+function backupText(){var o=JSON.parse(JSON.stringify(S));o.app='hisaab';o.exportedAt=new Date().toISOString();return JSON.stringify(o,null,2)}
+function csvCell(v){v=String(v==null?'':v);if(/^[=+\-@\t\r]/.test(v))v="'"+v;return '"'+v.replace(/"/g,'""')+'"'}
+function csvText(){
+ var rows=S.expenses.slice().sort(function(a,b){return a.date<b.date?-1:a.date>b.date?1:0});
+ return '﻿'+['Date,Category,Amount (INR),Note,Paid by,Recurring'].concat(rows.map(function(e){return [e.date,csvCell(cat(e.catId).name),(e.amount/100).toFixed(2),csvCell(e.note),csvCell(member(e.who).name),e.recId?'Yes':'No'].join(',')})).join('\r\n');
+}
+function summaryOf(st){
+ var months=Object.keys(st.income),dates=st.expenses.map(function(e){return e.date.slice(0,7)});
+ var all=months.concat(dates).sort();
+ return {cats:st.categories.length,exp:st.expenses.length,inc:sum(Object.keys(st.income),function(m){return st.income[m].length}),rec:st.recurring.length,range:all.length?monthLabel(all[0])+' to '+monthLabel(all[all.length-1]):'no dated entries'};
+}
+function vPrefs(){
+ var th=S.theme,h='';
+ h+='<section class="card sec"><h3>Appearance</h3><div class="seg" role="group" aria-label="Theme">'+['system','light','dark'].map(function(t){return '<button data-act="theme-set" data-id="'+t+'" aria-pressed="'+(th===t)+'">'+t[0].toUpperCase()+t.slice(1)+'</button>'}).join('')+'</div></section>';
+ h+=membersCard();
+ h+='<section class="card sec"><h3>Your data stays on this device</h3><p class="muted small">Hisaab has no account and no server. Everything you enter is saved in this browser only, and anyone you share the app with gets their own private copy. Clearing browser data or switching phones removes it, so download a backup now and then.</p></section>';
+ h+='<section class="card sec"><h3>Back up</h3><div class="btns"><button class="btn primary" data-act="export-json">Download backup (.json)</button><button class="btn" data-act="copy-json">Copy backup text</button><button class="btn" data-act="export-csv">Download expenses (.csv)</button><button class="btn" data-act="copy-csv">Copy expenses as CSV</button></div>'+
+  '<p class="muted small">If a download does not start in your browser, use a Copy button and paste the text into a file named hisaab-backup.json.</p><details id="expBox"><summary class="small" style="cursor:pointer;color:var(--accent);font-weight:600">Show text to copy</summary><textarea id="exp_text" readonly aria-label="Backup text"></textarea></details></section>';
+ h+='<section class="card sec"><h3>Restore from a backup</h3><label class="fld"><span>Choose a backup file</span><input id="imp_file" type="file" accept=".json,application/json"></label>'+
+  '<label class="fld"><span>Or paste the backup text</span><textarea id="imp_text" placeholder="{ ... }" aria-label="Backup text to restore"></textarea></label><div class="btns"><button class="btn" data-act="import-check">Check backup</button></div>';
+ if(importInfo){
+  if(importInfo.error)h+='<div class="panel bad"><b>Cannot restore</b><span class="small">'+esc(importInfo.error)+'</span></div>';
+  else{var s=summaryOf(importInfo.state);h+='<div class="panel"><b>This backup contains</b><span class="small">'+s.cats+' categories, '+s.exp+' expenses, '+s.inc+' income entries and '+s.rec+' recurring items, covering '+esc(s.range)+'.</span><span class="small"><b>Restoring replaces everything currently in Hisaab.</b></span><div class="btns"><button class="btn danger" data-act="import-apply">Replace my data</button><button class="btn" data-act="import-cancel">Cancel</button></div></div>'}
+ }
+ h+='</section>';
+ h+='<section class="card sec"><h3>Sample data</h3><p class="muted small">Three months of example income, spending and recurring bills, so you can see how everything works. Sample entries are marked and removed separately from your own.</p><div class="btns">'+
+  (hasSample()?'<button class="btn" data-act="sample-clear">Clear sample data</button>':'<button class="btn" data-act="sample-load">Load sample data</button>')+'</div></section>';
+ h+='<section class="card sec"><h3>About</h3><p class="muted small">Hisaab is a private, on-device money tracker. Built by ananthofficial09. See more of my work on GitHub.</p><div class="btns"><a class="btn primary" href="https://github.com/ananthofficial09" target="_blank" rel="noopener noreferrer">View my GitHub profile</a></div></section>';
+ h+='<section class="card sec"><h3>Reset everything</h3><p class="muted small">Deletes all income, expenses, categories and recurring items from this browser.</p>';
+ if(!resetOpen)h+='<div class="btns"><button class="btn" data-act="reset-start">Reset all data</button></div>';
+ else h+='<div class="panel bad"><label style="display:flex;gap:8px;align-items:flex-start"><input type="checkbox" id="rst_ok" style="margin-top:4px"><span class="small">I understand this cannot be undone unless I have a backup.</span></label><div class="btns"><button class="btn danger" id="rstBtn" data-act="reset-confirm" disabled>Delete everything</button><button class="btn" data-act="reset-cancel">Cancel</button></div></div>';
+ return h+'</section>';
+}
+
+/* ---------- render ---------- */
+var views={dashboard:vDashboard,investments:vInvestments,expenses:vExpenses,income:vIncome,categories:vCategories,recurring:vRecurring,preferences:vPrefs};
+function renderHeader(){
+ var isNow=month===curMonth();
+ $('#hrow').innerHTML='<div class="brand"><img src="'+LOGO+'" alt="" width="32" height="32">Hisaab<small>Income, expenses, savings</small></div>'+
+  '<div class="stepper"><button class="icon-btn" data-act="month-prev" aria-label="Previous month">'+icon('left')+'</button><span class="lbl" aria-live="polite">'+monthLabel(month)+'</span><button class="icon-btn" data-act="month-next" aria-label="Next month">'+icon('right')+'</button>'+
+  (isNow?'':'<button class="today-chip" data-act="month-today">Today</button>')+'</div>'+
+  '<button class="icon-btn" data-act="theme-toggle" aria-label="Switch to '+(isDark()?'light':'dark')+' mode">'+icon(isDark()?'sun':'moon')+'</button>';
+ $('#tabs').innerHTML=TABS.map(function(t){return '<a class="tab" href="#'+t[0]+'"'+(t[0]===view?' aria-current="page"':'')+'>'+t[1]+'</a>'}).join('');
+ $('#fab').hidden=(view==='preferences'||view==='investments');
+ renderViews();
+}
+function render(){
+ ensureRecurring(month);
+ renderHeader();
+ $('#main').innerHTML=views[view]();
+}
+function route(){var h=location.hash.replace('#','');view=TABS.some(function(t){return t[0]===h})?h:'dashboard';render();window.scrollTo(0,0)}
+
+/* ---------- forms ---------- */
+function catChips(sel){return '<div class="chips" role="radiogroup" aria-label="Category">'+S.categories.map(function(c){return '<label class="chip"><input type="radio" name="cat" value="'+c.id+'"'+(c.id===sel?' checked':'')+'><span><i class="dot" style="background:'+c.color+'"></i>'+esc(c.name)+'</span></label>'}).join('')+'</div>'}
+function checkedCat(f){var r=f.querySelector('input[name=cat]:checked');return r?r.value:''}
+function amountErr(a){if(a==null||a<=0)return 'Enter an amount above zero, like 250 or 249.50.';if(a>MAXP)return 'That amount is too large. The limit is ₹10,00,00,000.';return ''}
+
+function expenseModal(id){
+ var e=id?S.expenses.filter(function(x){return x.id===id})[0]:null;
+ var date=e?e.date:(month===curMonth()?today():month+'-01'),whoSel=e?(e.who||OWNER):defWho();
+ var sel=e?e.catId:(lastCat&&S.categories.some(function(c){return c.id===lastCat})?lastCat:S.categories[0].id);
+ openModal({title:e?'Edit expense':'Add expense',submit:e?'Save changes':'Save',
+  extra:e?'':'<button class="btn" type="submit" value="again">Save and add another</button>',
+  body:'<label class="fld"><span>Amount (₹)</span><input id="f_amt" inputmode="decimal" autocomplete="off" placeholder="0" value="'+(e?rupeesStr(e.amount):'')+'"></label>'+
+   '<label class="fld"><span>Date</span><input id="f_date" type="date" value="'+date+'"></label>'+
+   '<fieldset class="fld"><legend>Category</legend>'+catChips(sel)+'</fieldset>'+whoField(whoSel,'Paid by')+
+   '<label class="fld"><span>Note (optional)</span><input id="f_note" maxlength="120" autocomplete="off" placeholder="e.g. Lunch, auto fare" value="'+esc(e?e.note:'')+'"></label>',
+  onSubmit:function(f,sub){
+   var a=parseAmt($('#f_amt').value),er=amountErr(a);if(er)return er;
+   var d=$('#f_date').value;if(!validDate(d))return 'Pick a valid date.';
+   var cid=checkedCat(f);if(!cid)return 'Choose a category.';
+   var note=$('#f_note').value.trim().slice(0,120);
+   var who=checkedWho(f);
+   if(e){e.amount=a;e.date=d;e.catId=cid;e.note=note;e.who=who}else S.expenses.push({id:uid(),date:d,amount:a,catId:cid,note:note,who:who});
+   lastCat=cid;lastWho=who;save();
+   var warn=budgetNote(cid,d.slice(0,7)),again=!e&&sub&&sub.value==='again';
+   render();
+   if(again){$('#f_amt').value='';$('#f_note').value='';$('#f_amt').focus();toast(warn||'Saved. Add the next one.');return 'keep'}
+   toast(offViewNote(who).trim()||warn||(d.slice(0,7)!==month?'Saved in '+monthLabel(d.slice(0,7))+'.':'Expense saved.'));
+  }});
+}
+function incomeModal(id){
+ var it=id?(S.income[month]||[]).filter(function(x){return x.id===id})[0]:null;
+ openModal({title:it?'Edit income source':'Add income source',sub:'For '+monthLabel(month),submit:it?'Save changes':'Save',
+  body:'<label class="fld"><span>Source name</span><input id="i_name" maxlength="40" autocomplete="off" placeholder="e.g. Salary, Freelance" value="'+esc(it?it.name:'')+'"></label>'+
+   '<label class="fld"><span>Amount received (₹)</span><input id="i_amt" inputmode="decimal" autocomplete="off" placeholder="0" value="'+(it?rupeesStr(it.amount):'')+'"></label>'+whoField(it?(it.who||OWNER):defWho(),'Earned by'),
+  onSubmit:function(f){
+   var n=$('#i_name').value.trim().slice(0,40);if(!n)return 'Give this income a name, like Salary.';
+   var a=parseAmt($('#i_amt').value),er=amountErr(a);if(er)return er;
+   var who=checkedWho(f);
+   if(it){it.name=n;it.amount=a;it.who=who}else{(S.income[month]=S.income[month]||[]).push({id:uid(),name:n,amount:a,who:who})}
+   lastWho=who;save();render();toast(offViewNote(who).trim()||'Income saved.');
+  }});
+}
+function catModal(id){
+ var c=id?S.categories.filter(function(x){return x.id===id})[0]:null,col=c?c.color:PALETTE[S.categories.length%PALETTE.length];
+ var sw=PALETTE.concat(c&&PALETTE.indexOf(c.color)<0?[c.color]:[]).map(function(p){return '<label class="sw"><input type="radio" name="col" value="'+p+'"'+(p===col?' checked':'')+'><span style="background:'+p+'" title="'+p+'"></span></label>'}).join('');
+ openModal({title:c?'Edit category':'Add category',submit:c?'Save changes':'Save',
+  extra:c?'<button class="btn danger" type="button" data-act="del-cat" data-id="'+c.id+'">Delete</button>':'',
+  body:'<label class="fld"><span>Name</span><input id="c_name" maxlength="40" autocomplete="off" value="'+esc(c?c.name:'')+'" placeholder="e.g. Pets"></label>'+
+   '<fieldset class="fld"><legend>Colour</legend><div class="sws" role="radiogroup" aria-label="Colour">'+sw+'</div></fieldset>'+
+   '<label class="fld"><span>Monthly budget limit (₹, optional)</span><input id="c_bud" inputmode="decimal" autocomplete="off" placeholder="No limit" value="'+(c&&c.budget?rupeesStr(c.budget):'')+'"></label>',
+  onSubmit:function(f){
+   var n=$('#c_name').value.trim().slice(0,40);if(!n)return 'Give the category a name.';
+   var dup=S.categories.some(function(x){return x.name.toLowerCase()===n.toLowerCase()&&(!c||x.id!==c.id)});if(dup)return 'You already have a category called '+n+'.';
+   var raw=$('#c_bud').value.trim(),b=null;
+   if(raw!==''){var p=parseAmt(raw);if(p==null||p>MAXP)return 'Enter the budget as a number, like 8000, or leave it blank.';b=p>0?p:null}
+   var cr=f.querySelector('input[name=col]:checked'),color=cr?cr.value:col;
+   if(c){c.name=n;c.color=color;c.budget=b}else S.categories.push({id:uid(),name:n,color:color,budget:b});
+   save();render();toast('Category saved.');
+  }});
+}
+function deleteCatFlow(id){
+ var c=S.categories.filter(function(x){return x.id===id})[0];if(!c)return;
+ if(S.categories.length<2){toast('Keep at least one category.');return}
+ var n=S.expenses.filter(function(e){return e.catId===id}).length,rc=S.recurring.filter(function(r){return r.catId===id}).length,others=S.categories.filter(function(x){return x.id!==id});
+ var body=(n||rc)?'<p class="small">'+(n?n+' expense'+(n>1?'s use':' uses'):'')+(n&&rc?' and ':'')+(rc?rc+' recurring item'+(rc>1?'s use':' uses'):'')+' <b>'+esc(c.name)+'</b>. Move '+((n+rc)>1?'them':'it')+' to:</p><label class="fld"><span class="sr">Move to category</span><select id="mv_to">'+others.map(function(o){return '<option value="'+o.id+'">'+esc(o.name)+'</option>'}).join('')+'</select></label>':'<p class="small">No expenses use this category.</p>';
+ openModal({title:'Delete '+c.name+'?',submit:(n||rc)?'Move and delete':'Delete',body:body,
+  onSubmit:function(){
+   var to=(n||rc)?$('#mv_to').value:null;
+   if(to){S.expenses.forEach(function(e){if(e.catId===id)e.catId=to});S.recurring.forEach(function(r){if(r.catId===id)r.catId=to})}
+   S.categories=S.categories.filter(function(x){return x.id!==id});save();render();toast('Category deleted.');
+  }});
+}
+function recModal(id){
+ var r=id?S.recurring.filter(function(x){return x.id===id})[0]:null;
+ var sel=r?r.catId:S.categories[0].id;
+ openModal({title:r?'Edit recurring expense':'Add recurring expense',submit:r?'Save changes':'Save',
+  body:'<label class="fld"><span>Name</span><input id="r_name" maxlength="40" autocomplete="off" placeholder="e.g. Rent, Streaming" value="'+esc(r?r.name:'')+'"></label>'+
+   '<label class="fld"><span>Amount each month (₹)</span><input id="r_amt" inputmode="decimal" autocomplete="off" placeholder="0" value="'+(r?rupeesStr(r.amount):'')+'"></label>'+
+   '<fieldset class="fld"><legend>Category</legend>'+catChips(sel)+'</fieldset>'+whoField(r?(r.who||OWNER):defWho(),'Paid by')+
+   '<label class="fld"><span>Day of month (1 to 31)</span><input id="r_day" type="number" min="1" max="31" inputmode="numeric" value="'+(r?r.day:1)+'"><small class="muted">In shorter months the last day is used.</small></label>'+
+   (r?'':'<label class="fld"><span>Start</span><select id="r_start"><option value="now">This month</option><option value="next">Next month</option></select><small class="muted">Pick next month if you already logged this month’s payment.</small></label>'),
+  onSubmit:function(f){
+   var n=$('#r_name').value.trim().slice(0,40);if(!n)return 'Give this expense a name.';
+   var a=parseAmt($('#r_amt').value),er=amountErr(a);if(er)return er;
+   var cid=checkedCat(f);if(!cid)return 'Choose a category.';
+   var d=parseInt($('#r_day').value,10);if(!(d>=1&&d<=31))return 'Day must be between 1 and 31.';
+   var who=checkedWho(f);
+   if(r){r.name=n;r.amount=a;r.catId=cid;r.day=d;r.who=who}
+   else{var st=$('#r_start').value==='next'?addMonths(curMonth(),1):curMonth();S.recurring.push({id:uid(),name:n,amount:a,catId:cid,who:who,day:d,active:true,start:st})}
+   save();render();toast('Recurring expense saved.');
+  }});
+}
+function welcome(){
+ openModal({title:'Welcome to Hisaab',footer:'<button type="button" class="btn" data-act="welcome-fresh">Start fresh</button><button type="button" class="btn primary" data-act="welcome-sample">Explore with sample data</button>',
+  body:'<p class="small">Track income from every source, log daily expenses, and see what you save each month in rupees.</p><p class="small"><b>Your data stays on this device.</b> There is no account. Download a backup from Settings now and then so you never lose it.</p>',
+  onClose:function(){S.welcomed=true;save()}});
+}
+
+/* ---------- sample data ---------- */
+function seeded(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+function catByName(n){var c=S.categories.filter(function(x){return x.name.toLowerCase()===n.toLowerCase()})[0];return (c||S.categories[0]).id}
+function loadSample(){
+ var rnd=seeded(11),m0=curMonth(),td=new Date().getDate();
+ [['Nifty 50 index SIP','SIP',1500000,1634000,-2],['Blue-chip stocks','Stocks',2500000,2380000,-1],['Gold ETF','Gold',1000000,1125000,-1],['Fixed deposit','Fixed Deposit',2000000,2037000,0]].forEach(function(x){S.investments.push({id:uid(),name:x[0],type:x[1],invested:x[2],value:x[3],date:addMonths(m0,x[4])+'-02',who:OWNER,s:1})});
+ function pick(a){return a[Math.floor(rnd()*a.length)]}
+ function amt(lo,hi){return Math.round((lo+rnd()*(hi-lo))/10)*1000}
+ var plan=[['Food',.55,120,650,['Lunch','Dinner out','Tea and snacks','Biryani','Cafe']],['Groceries',.28,500,1800,['Vegetables','Weekly groceries','Milk and eggs','Fruits']],
+  ['Transport',.6,40,320,['Auto','Metro recharge','Fuel','Cab']],['Shopping',.05,700,3500,['Clothes','Home items','Online order']],['Health',.03,200,1500,['Pharmacy','Doctor visit']],
+  ['Entertainment',.08,250,900,['Movie','Weekend outing']],['Other',.06,100,700,['Gift','Stationery','Repairs']]];
+ S.recurring.push({id:uid(),name:'Rent',amount:1500000,catId:catByName('Rent'),day:1,active:true,start:addMonths(m0,-2),s:1},
+  {id:uid(),name:'Internet and mobile',amount:79900,catId:catByName('Bills & Utilities'),day:5,active:true,start:addMonths(m0,-2),s:1},
+  {id:uid(),name:'Streaming',amount:64900,catId:catByName('Entertainment'),day:8,active:true,start:addMonths(m0,-2),s:1});
+ for(var k=-2;k<=0;k++){
+  var m=addMonths(m0,k),last=k===0?td:daysIn(m),free=[800000,1200000,650000][k+2];
+  S.income[m]=(S.income[m]||[]).concat([{id:uid(),name:'Salary',amount:6200000,s:1},{id:uid(),name:'Freelance',amount:free,s:1}]);
+  for(var d=1;d<=last;d++){plan.forEach(function(p){if(rnd()<p[1])S.expenses.push({id:uid(),date:m+'-'+pad(d),amount:amt(p[2],p[3]),catId:catByName(p[0]),note:pick(p[4]),s:1})})}
+  if(last>=12)S.expenses.push({id:uid(),date:m+'-12',amount:120000,catId:catByName('Education'),note:'Online course',s:1});
+  ensureRecurring(m);
+ }
+ save();
+}
+function clearSample(){
+ var rid={};S.recurring.forEach(function(r){if(r.s)rid[r.id]=1});
+ S.expenses=S.expenses.filter(function(e){return !e.s});
+ S.recurring=S.recurring.filter(function(r){return !r.s});S.investments=S.investments.filter(function(v){return !v.s});
+ Object.keys(S.applied).forEach(function(k){if(rid[k.split('|')[1]])delete S.applied[k]});
+ Object.keys(S.income).forEach(function(m){S.income[m]=S.income[m].filter(function(i){return !i.s});if(!S.income[m].length)delete S.income[m]});
+ save();
+}
+
+/* ---------- download / copy ---------- */
+function download(name,text,mime){
+ try{var b=new Blob([text],{type:mime}),u=URL.createObjectURL(b),a=document.createElement('a');a.href=u;a.download=name;document.body.appendChild(a);a.click();document.body.removeChild(a);setTimeout(function(){URL.revokeObjectURL(u)},2000);
+  toast('Download started. If nothing appears, use the Copy button instead.')}catch(e){toast('Download is blocked here. Use the Copy button instead.')}
+}
+function copyText(text,label){
+ function fallback(){var d=$('#expBox'),t=$('#exp_text');if(d&&t){d.open=true;t.value=text;t.focus();t.select()}toast('Copy was blocked. Select the text shown below and copy it.')}
+ try{if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(function(){toast(label+' copied.')},fallback)}else fallback()}catch(e){fallback()}
+}
+
+/* ---------- actions ---------- */
+var actions={
+ 'month-prev':function(){month=addMonths(month,-1);render()},
+ 'month-next':function(){month=addMonths(month,1);render()},
+ 'month-today':function(){month=curMonth();render()},
+ 'theme-toggle':function(){S.theme=isDark()?'light':'dark';applyTheme();save();render()},
+ 'theme-set':function(id){S.theme=id;applyTheme();save();render()},
+ 'add-exp':function(){expenseModal()},
+ 'edit-exp':function(id){expenseModal(id)},
+ 'del-exp':function(id){var i=S.expenses.findIndex(function(x){return x.id===id});if(i<0)return;var it=S.expenses.splice(i,1)[0];save();render();
+  toast('Expense deleted.',function(){S.expenses.splice(Math.min(i,S.expenses.length),0,it);save();render()})},
+ 'add-inv':function(){invModal()},
+ 'edit-inv':function(id){invModal(id)},
+ 'del-inv':function(id){var i=S.investments.findIndex(function(x){return x.id===id});if(i<0)return;var it=S.investments.splice(i,1)[0];save();render();toast('Investment deleted.',function(){S.investments.splice(Math.min(i,S.investments.length),0,it);save();render()})},
+ 'add-inc':function(){incomeModal()},
+ 'edit-inc':function(id){incomeModal(id)},
+ 'del-inc':function(id){var arr=S.income[month]||[],i=arr.findIndex(function(x){return x.id===id});if(i<0)return;var it=arr.splice(i,1)[0];if(!arr.length)delete S.income[month];save();render();
+  toast('Income deleted.',function(){(S.income[month]=S.income[month]||[]).splice(i,0,it);save();render()})},
+ 'copy-inc':function(){var pm=addMonths(month,-1),src=(S.income[pm]||[]).filter(function(x){return inScope(x.who)});if(!src.length)return;S.income[month]=(S.income[month]||[]).concat(src.map(function(x){return {id:uid(),name:x.name,amount:x.amount,who:x.who||OWNER,s:x.s}}));save();render();toast('Copied income from '+monthLabel(pm)+'. Edit any amounts that changed.')},
+ 'add-cat':function(){catModal()},
+ 'edit-cat':function(id){catModal(id)},
+ 'del-cat':function(id){deleteCatFlow(id)},
+ 'add-rec':function(){recModal()},
+ 'edit-rec':function(id){recModal(id)},
+ 'toggle-rec':function(id){var r=S.recurring.filter(function(x){return x.id===id})[0];if(!r)return;r.active=!r.active;if(r.active)r.start=curMonth();save();render();toast(r.name+(r.active?' resumed from this month.':' paused.'))},
+ 'del-rec':function(id){var i=S.recurring.findIndex(function(x){return x.id===id});if(i<0)return;var it=S.recurring.splice(i,1)[0];save();render();toast('Recurring expense deleted. Past entries were kept.',function(){S.recurring.splice(Math.min(i,S.recurring.length),0,it);save();render()})},
+ 'view-set':function(id){S.scope=id;save();render()},
+ 'add-mem':function(){memberModal()},
+ 'edit-mem':function(id){memberModal(id)},
+ 'del-mem':function(id){deleteMemberFlow(id)},
+ 'filters-clear':function(){F={q:'',cat:'',from:'',to:'',min:'',max:'',scope:'month'};render()},
+ 'toast-undo':function(){var f=undoFn;undoFn=null;$('#toast').hidden=true;if(f)f()},
+ 'modal-close':function(){closeModal()},
+ 'modal-back':function(id,t,e){if(e.target===t)closeModal()},
+ 'welcome-sample':function(){closeModal(true);S.welcomed=true;loadSample();render();toast('Sample data loaded. Clear it any time in Settings.')},
+ 'welcome-fresh':function(){closeModal()},
+ 'export-json':function(){download('hisaab-backup-'+today()+'.json',backupText(),'application/json')},
+ 'copy-json':function(){copyText(backupText(),'Backup')},
+ 'export-csv':function(){download('hisaab-expenses-'+today()+'.csv',csvText(),'text/csv')},
+ 'copy-csv':function(){copyText(csvText(),'Expenses CSV')},
+ 'import-check':function(){
+  var txt=($('#imp_text').value||'').trim();
+  if(!txt){importInfo={error:'Choose a backup file or paste the backup text first.'};render();return}
+  try{var r=sanitize(JSON.parse(txt));importInfo=r.ok?{state:r.state}:{error:r.error}}catch(e){importInfo={error:'That text is not valid JSON. Make sure you copied the whole backup.'}}
+  var keep=$('#imp_text')?txt:'';render();var t=$('#imp_text');if(t)t.value=keep},
+ 'import-apply':function(){if(!importInfo||!importInfo.state)return;var th=S.theme;S=importInfo.state;S.theme=th;S.welcomed=true;importInfo=null;save();render();toast('Backup restored.')},
+ 'import-cancel':function(){importInfo=null;render()},
+ 'sample-load':function(){loadSample();render();toast('Sample data loaded.')},
+ 'sample-clear':function(){clearSample();render();toast('Sample data cleared.')},
+ 'reset-start':function(){resetOpen=true;render()},
+ 'reset-cancel':function(){resetOpen=false;render()},
+ 'reset-confirm':function(){var th=S.theme;S=freshState();S.theme=th;S.welcomed=true;resetOpen=false;importInfo=null;save();render();toast('All data deleted.')}
+};
+document.addEventListener('click',function(e){
+ var t=e.target.closest?e.target.closest('[data-act]'):null;if(!t)return;
+ var fn=actions[t.getAttribute('data-act')];if(fn)fn(t.getAttribute('data-id'),t,e);
+});
+function refreshList(){
+ var l=$('#expList');if(l)l.innerHTML=listHtml();
+ var c=$('#fl_clear');if(c)c.hidden=!filtersActive();
+}
+function onFilter(e){
+ var id=e.target.id;if(!id||id.indexOf('fl_')!==0)return;
+ var map={fl_q:'q',fl_cat:'cat',fl_scope:'scope',fl_from:'from',fl_to:'to',fl_min:'min',fl_max:'max'};
+ if(map[id]){F[map[id]]=e.target.value;refreshList()}
+}
+document.addEventListener('input',onFilter);
+document.addEventListener('change',function(e){
+ onFilter(e);
+ if(e.target.id==='rst_ok'){$('#rstBtn').disabled=!e.target.checked}
+ if(e.target.id==='imp_file'&&e.target.files&&e.target.files[0]){
+  var fr=new FileReader();fr.onload=function(){var t=$('#imp_text');if(t){t.value=String(fr.result||'');actions['import-check']()}};fr.onerror=function(){toast('Could not read that file.')};fr.readAsText(e.target.files[0]);
+ }
+});
+document.addEventListener('keydown',function(e){
+ if(!modalState)return;
+ if(e.key==='Escape'){closeModal();return}
+ if(e.key==='Tab'){
+  var f=[].slice.call(document.querySelectorAll('.modal input:not([disabled]),.modal select,.modal button,.modal textarea')).filter(function(x){return x.offsetParent!==null||x.type==='radio'});
+  if(!f.length)return;var a=f[0],z=f[f.length-1];
+  if(e.shiftKey&&document.activeElement===a){e.preventDefault();z.focus()}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus()}
+ }
+});
+window.addEventListener('hashchange',route);
+
+/* ---------- boot ---------- */
+S=load();applyTheme();$('#storeBanner').hidden=storageOk;
+if(window.__HISAAB_TEST)window.__HISAAB_TEST({S:function(){return S},views:views,sanitize:sanitize,loadSample:loadSample,clearSample:clearSample,inr:inr,parseAmt:parseAmt,totals:totals,ensureRecurring:ensureRecurring,backupText:backupText,csvText:csvText,setMonth:function(m){month=m},setView:function(v){view=v},actions:actions,addMonths:addMonths,compareCard:compareCard,trendChart:trendChart,dailyChart:dailyChart,donut:donut,freshState:freshState,setS:function(x){S=x},setScope:function(s){S.scope=s},member:member,inScope:inScope,whoCard:whoCard,membersCard:membersCard,renderViews:renderViews});
+route();
+if(!S.welcomed)welcome();
+})();
+</script>
+
+</html>
