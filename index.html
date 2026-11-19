@@ -62,6 +62,9 @@ a{color:var(--accent)}
 .stepper .lbl{min-width:118px;text-align:center;font-weight:600;font-size:15px}
 .icon-btn{border:0;background:transparent;width:40px;height:40px;border-radius:10px;display:inline-grid;place-items:center;color:var(--ink-2)}
 .icon-btn:hover{background:var(--surface-2);color:var(--ink)}
+.icon-btn[disabled]{opacity:.3;cursor:not-allowed;background:transparent}
+.mv{display:flex;flex:none}
+.mv .icon-btn{width:36px}
 .today-chip{border:1px solid var(--line);background:transparent;border-radius:999px;font-size:12px;padding:3px 10px;color:var(--accent);font-weight:600}
 .tabs{display:flex;gap:4px;overflow-x:auto;padding-block:4px 8px;scrollbar-width:none}
 .tabs::-webkit-scrollbar{display:none}
@@ -244,15 +247,17 @@ svg.chart{width:100%;height:auto;display:block;max-width:600px;margin:0 auto}
 (function(){
 'use strict';
 var LOGO='data:image/png;base64,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';
-var KEY='hisaab.v1', VERSION=2, OWNER='m_me', MAXP=1000000000; // MAXP = ₹1,00,00,000 in paise
+var KEY='hisaab.v1', VERSION=3, OWNER='m_me', MAXP=1000000000; // MAXP = ₹1,00,00,000 in paise
 var MN=['January','February','March','April','May','June','July','August','September','October','November','December'];
 var WD=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 var PALETTE=['#E07A5F','#3D85C6','#8E7CC3','#E0A526','#2E9E83','#D4577F','#6AA84F','#C27C0E','#5B8DB8','#8C8C8C'];
 var MCOL=['#2E9E83','#3D85C6','#E07A5F','#8E7CC3','#E0A526','#D4577F','#6AA84F','#5B8DB8'];
 var DEFAULT_CATS=[['Rent',1],['Food',0],['Groceries',6],['Transport',3],['Bills & Utilities',2],['Health',5],['Shopping',4],['Entertainment',7],['Education',8],['Other',9]];
 var INV_TYPES=['SIP','Mutual Fund','Stocks','Gold','Fixed Deposit','PPF / EPF','Crypto','Real Estate','Other'];
+var DEBT_TYPES=['Home loan','Car loan','Personal loan','Education loan','Credit card','Gold loan','Borrowed from person','Other'];
+var DEBT_COL=['#3D85C6','#8E7CC3','#E07A5F','#2E9E83','#D4577F','#E0A526','#6AA84F','#8C8C8C'];
 var INV_COL=['#2E9E83','#3D85C6','#8E7CC3','#E0A526','#5B8DB8','#6AA84F','#E07A5F','#C27C0E','#8C8C8C'];
-var TABS=[['dashboard','Dashboard'],['expenses','Expenses'],['income','Income'],['investments','Investments'],['categories','Categories'],['recurring','Recurring'],['preferences','Settings']];
+var TABS=[['dashboard','Dashboard'],['expenses','Expenses'],['income','Income'],['investments','Investments'],['debts','Debts'],['categories','Categories'],['recurring','Recurring'],['preferences','Settings']];
 
 /* ---------- tiny helpers ---------- */
 function $(s,r){return (r||document).querySelector(s)}
@@ -265,7 +270,7 @@ function icon(n){var p={
  trash:'M5 7h14M10 11v6M14 11v6M8 7l1-3h6l1 3M7 7l1 13h8l1-13',
  left:'M15 5l-7 7 7 7',right:'M9 5l7 7-7 7',search:'M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14zM20 20l-4-4',
  sun:'M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6L7 7M17 17l1.4 1.4M5.6 18.4L7 17M17 7l1.4-1.4M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8z',
- moon:'M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z'};
+ moon:'M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z',up:'M6 15l6-6 6 6',down:'M6 9l6 6 6-6'};
  return '<svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="'+p[n]+'"/></svg>'}
 
 /* ---------- money (stored as integer paise) ---------- */
@@ -302,7 +307,7 @@ var origTheme=document.documentElement.getAttribute('data-theme');
 function freshState(){
  return {v:VERSION,theme:'system',welcomed:false,scope:OWNER,members:[{id:OWNER,name:'Me',color:MCOL[0]}],
   categories:DEFAULT_CATS.map(function(c){return {id:'c_'+c[0].toLowerCase().replace(/[^a-z]+/g,''),name:c[0],color:PALETTE[c[1]],budget:null}}),
-  income:{},expenses:[],recurring:[],investments:[],applied:{}};
+  income:{},expenses:[],recurring:[],investments:[],debts:[],applied:{}};
 }
 function cleanStr(x,max){return typeof x==='string'?x.replace(/[\u0000-\u001f]/g,' ').trim().slice(0,max):''}
 function cleanInt(x,min,max){if(typeof x!=='number'||!isFinite(x))return null;x=Math.round(x);return(x<min||x>max)?null:x}
@@ -377,6 +382,20 @@ function sanitize(o){
   if(a==null||c==null||!n||typeof v.date!=='string'||!validDate(v.date))return;
   var r={id:cleanStr(v.id,40)||uid(),name:n,type:INV_TYPES.indexOf(v.type)>=0?v.type:'Other',invested:a,value:c,date:v.date,who:fixW(v.who)};
   if(v.s)r.s=1;st.investments.push(r);
+ })}
+ if(Array.isArray(o.debts)){o.debts.forEach(function(v){
+  if(!v||typeof v!=='object')return;
+  var n=cleanStr(v.name,40),op=cleanInt(v.opening,0,MAXP),tt=cleanInt(v.total,1,MAXP);
+  if(!n||op==null||tt==null||typeof v.date!=='string'||!validDate(v.date))return;
+  var rt=(typeof v.rate==='number'&&isFinite(v.rate)&&v.rate>=0&&v.rate<=100)?Math.round(v.rate*100)/100:0;
+  var r={id:cleanStr(v.id,40)||uid(),name:n,type:DEBT_TYPES.indexOf(v.type)>=0?v.type:'Other',total:Math.max(tt,op),opening:op,rate:rt,emi:cleanInt(v.emi,1,MAXP)||0,day:cleanInt(v.day,1,31)||0,date:v.date,who:fixW(v.who),payments:[]};
+  if(Array.isArray(v.payments))v.payments.forEach(function(p){
+   if(!p||typeof p!=='object')return;
+   var a=cleanInt(p.amount,1,MAXP);if(a==null||typeof p.date!=='string'||!validDate(p.date))return;
+   var pr=cleanInt(p.prin,0,a);if(pr==null)pr=a;
+   r.payments.push({id:cleanStr(p.id,40)||uid(),date:p.date,amount:a,prin:pr,intr:a-pr,note:cleanStr(p.note,60)});
+  });
+  if(v.s)r.s=1;st.debts.push(r);
  })}
  if(o.applied&&typeof o.applied==='object'&&!Array.isArray(o.applied)){
   Object.keys(o.applied).forEach(function(k){if(/^\d{4}-\d{2}\|.{1,40}$/.test(k))st.applied[k]=1});
@@ -488,7 +507,7 @@ function whoCard(m){
  return '<section class="card span2"><h2>Who earned and spent what <small>'+monthLabel(m)+'</small></h2><ul class="list">'+rows+'</ul><p class="small muted" style="margin-top:8px">Household total: earned '+inr(h.inc)+', spent '+inr(h.exp)+', left '+inr(h.sav)+'.</p></section>';
 }
 function renderViews(){
- var box=$('#views'),show=multi()&&['dashboard','expenses','income','investments','categories'].indexOf(view)>=0;
+ var box=$('#views'),show=multi()&&['dashboard','expenses','income','investments','debts','categories'].indexOf(view)>=0;
  box.hidden=!show;
  if(!show){box.innerHTML='';return}
  function chip(id,name,color){return '<button class="vchip" data-act="view-set" data-id="'+id+'" aria-pressed="'+(S.scope===id)+'">'+(color?'<i class="dot" style="background:'+color+'"></i>':'')+esc(name)+'</button>'}
@@ -522,8 +541,8 @@ function deleteMemberFlow(id){
  var ne=S.expenses.filter(function(e){return mine(e.who)}).length,
   ni=sum(Object.keys(S.income),function(k){return S.income[k].filter(function(i){return mine(i.who)}).length}),
   nr=S.recurring.filter(function(r){return mine(r.who)}).length,
-  nv=S.investments.filter(function(v){return mine(v.who)}).length,others=S.members.filter(function(x){return x.id!==id}),any=ne+ni+nr+nv>0;
- var body=any?'<p class="small"><b>'+esc(m.name)+'</b> has '+ne+' expense'+(ne===1?'':'s')+', '+ni+' income entr'+(ni===1?'y':'ies')+' and '+nr+' recurring item'+(nr===1?'':'s')+' and '+nv+' investment'+(nv===1?'':'s')+'. Choose what happens to them.</p>'+
+  nv=S.investments.filter(function(v){return mine(v.who)}).length,nd=S.debts.filter(function(v){return mine(v.who)}).length,others=S.members.filter(function(x){return x.id!==id}),any=ne+ni+nr+nv+nd>0;
+ var body=any?'<p class="small"><b>'+esc(m.name)+'</b> has '+ne+' expense'+(ne===1?'':'s')+', '+ni+' income entr'+(ni===1?'y':'ies')+' and '+nr+' recurring item'+(nr===1?'':'s')+', '+nv+' investment'+(nv===1?'':'s')+' and '+nd+' debt'+(nd===1?'':'s')+'. Choose what happens to them.</p>'+
    '<label class="fld"><span class="sr">What to do with their entries</span><select id="mv_who"><option value="__del">Delete these entries</option>'+others.map(function(o){return '<option value="'+o.id+'">Move to '+esc(o.name)+'</option>'}).join('')+'</select></label><p class="muted small">Moving entries adds them to that person’s totals.</p>'
   :'<p class="small">'+esc(m.name)+' has no entries.</p>';
  openModal({title:'Remove '+m.name+'?',submit:'Remove member',body:body,onSubmit:function(){
@@ -531,11 +550,11 @@ function deleteMemberFlow(id){
   if(to==='__del'){
    S.expenses=S.expenses.filter(function(e){return !mine(e.who)});
    Object.keys(S.income).forEach(function(k){S.income[k]=S.income[k].filter(function(i){return !mine(i.who)});if(!S.income[k].length)delete S.income[k]});
-   S.recurring=S.recurring.filter(function(r){return !mine(r.who)});S.investments=S.investments.filter(function(v){return !mine(v.who)});
+   S.recurring=S.recurring.filter(function(r){return !mine(r.who)});S.investments=S.investments.filter(function(v){return !mine(v.who)});S.debts=S.debts.filter(function(v){return !mine(v.who)});
   }else{
    S.expenses.forEach(function(e){if(mine(e.who))e.who=to});
    Object.keys(S.income).forEach(function(k){S.income[k].forEach(function(i){if(mine(i.who))i.who=to})});
-   S.recurring.forEach(function(r){if(mine(r.who))r.who=to});S.investments.forEach(function(v){if(mine(v.who))v.who=to});
+   S.recurring.forEach(function(r){if(mine(r.who))r.who=to});S.investments.forEach(function(v){if(mine(v.who))v.who=to});S.debts.forEach(function(v){if(mine(v.who))v.who=to});
   }
   S.members=S.members.filter(function(x){return x.id!==id});
   if(S.scope===id)S.scope=OWNER;
@@ -641,7 +660,7 @@ function sampleBanner(){
  return '<div class="sample"><span>You are looking at sample data. Your own entries are kept when you clear it.</span><button class="btn sm" data-act="sample-clear">Clear sample data</button></div>';
 }
 function hasSample(){
- return S.investments.some(function(v){return v.s})||S.expenses.some(function(e){return e.s})||S.recurring.some(function(r){return r.s})||Object.keys(S.income).some(function(m){return S.income[m].some(function(i){return i.s})});
+ return S.investments.some(function(v){return v.s})||S.debts.some(function(v){return v.s})||S.expenses.some(function(e){return e.s})||S.recurring.some(function(r){return r.s})||Object.keys(S.income).some(function(m){return S.income[m].some(function(i){return i.s})});
 }
 
 function vDashboard(){
@@ -658,7 +677,7 @@ function vDashboard(){
    (S.income[addMonths(month,-1)]&&S.income[addMonths(month,-1)].length?'<button class="btn sm" data-act="copy-inc">Copy from '+monthShort(addMonths(month,-1))+'</button>':'')+'</div></div>';
  }
  h+='<div class="stats"><div><b>'+inr(t.inc)+'</b><span>Income</span></div><div><b>'+inr(t.exp)+'</b><span>Expenses</span></div><div><b>'+(avg==null?'–':inr(avg))+'</b><span>Avg per day</span></div></div></section>';
- h+='<div class="grid2">'+whoCard(month)+'<section class="card"><h2>Budget watch</h2>'+budgetAlerts(month)+'</section>'+invCard()+
+ h+='<div class="grid2">'+whoCard(month)+'<section class="card"><h2>Budget watch</h2>'+budgetAlerts(month)+'</section>'+invCard()+debtCard()+
   '<section class="card"><h2>Spending by category <small>'+monthLabel(month)+'</small></h2>'+donut(month)+'</section>'+
   '<section class="card"><h2>Daily spending <small>'+monthLabel(month)+'</small></h2>'+dailyChart(month)+'</section>'+
   '<section class="card"><h2>This month vs last <small>'+monthShort(month)+' vs '+monthShort(addMonths(month,-1))+'</small></h2>'+compareCard(month)+'</section>'+
@@ -777,16 +796,126 @@ function invModal(id){
   }});
 }
 
+/* debts and repayments */
+function debtList(){return S.debts.filter(function(d){return inScope(d.who)})}
+function debtBal(d){return Math.max(0,d.opening-sum(d.payments,function(p){return p.prin}))}
+function debtCol(k){return DEBT_COL[DEBT_TYPES.indexOf(k)]||'#8C8C8C'}
+function debtTotals(l){return {bal:sum(l,debtBal),total:sum(l,function(d){return d.total}),emi:sum(l.filter(function(d){return debtBal(d)>0}),function(d){return d.emi||0})}}
+function repaidIn(l,m){var t=0;l.forEach(function(d){d.payments.forEach(function(p){if(p.date.slice(0,7)===m)t+=p.amount})});return t}
+function monthsLeft(d){
+ var B=debtBal(d);if(B<=0)return 0;var E=d.emi||0;if(!E)return null;
+ var r=d.rate/1200;if(r<=0)return Math.ceil(B/E);
+ if(E<=B*r)return Infinity;
+ return Math.ceil(-Math.log(1-r*B/E)/Math.log(1+r));
+}
+function nextDue(d){
+ if(debtBal(d)<=0||!d.day||!d.emi)return null;
+ var m=curMonth(),paid=d.payments.some(function(p){return p.date.slice(0,7)===m});
+ var mm=paid?addMonths(m,1):m,date=mm+'-'+pad(Math.min(d.day,daysIn(mm)));
+ if(date<d.date){mm=addMonths(mm,1);date=mm+'-'+pad(Math.min(d.day,daysIn(mm)))}
+ function t(s){return new Date(+s.slice(0,4),+s.slice(5,7)-1,+s.slice(8,10))}
+ return {date:date,days:Math.round((t(date)-t(today()))/86400000)};
+}
+function duePill(d){
+ var n=nextDue(d);if(!n)return '';
+ if(n.days<0)return '<span class="pill bad">Overdue '+(-n.days)+'d</span>';
+ if(n.days===0)return '<span class="pill warn">Due today</span>';
+ if(n.days<=5)return '<span class="pill warn">Due in '+n.days+'d</span>';
+ return '<span class="pill">Due '+fmtDate(n.date).slice(0,6)+'</span>';
+}
+function debtCard(){
+ var l=debtList(),t=debtTotals(l),rp=repaidIn(l,month),nd=null;
+ l.forEach(function(d){var n=nextDue(d);if(n&&(!nd||n.date<nd.n.date))nd={d:d,n:n}});
+ function row(a,b){return '<div class="cmp"><span class="n">'+a+'</span><span class="v"><b>'+b+'</b></span><span></span></div>'}
+ return '<section class="card"><h2>Debts <a class="link" href="#debts">Open</a></h2>'+
+  (l.length?row('Total owed',inr(t.bal))+row('Monthly EMIs',inr(t.emi))+row('Repaid in '+monthShort(month),inr(rp))+(nd?row('Next due · '+esc(nd.d.name),fmtDate(nd.n.date).slice(0,6)):''):'<p class="muted small">Track loans, credit cards and money you owe.</p>')+'</section>';
+}
+function debtItem(d){
+ var bal=debtBal(d),col=debtCol(d.type),done=Math.max(0,d.total-bal),pct=d.total>0?Math.min(100,done/d.total*100):0,ml=monthsLeft(d),info=[];
+ info.push(esc(d.type));
+ if(d.rate>0)info.push(String(d.rate)+'% a year');
+ if(d.emi)info.push('EMI '+inr(d.emi));
+ if(d.day)info.push('due on day '+d.day);
+ if(multi()&&S.scope==='all')info.push(esc(member(d.who).name));
+ var pay=bal<=0?'<span class="pill good">Cleared</span>':ml==null?'':ml===Infinity?'<span class="pill bad">EMI is below the interest</span>':'<span class="pill">Clear by '+monthLabel(addMonths(curMonth(),ml))+'</span>';
+ var pays=d.payments.slice().sort(function(a,b){return a.date<b.date?1:a.date>b.date?-1:0});
+ var hist=pays.length?'<details style="margin-top:12px"><summary class="small" style="cursor:pointer;font-weight:600;color:var(--accent)">Repayment history ('+pays.length+')</summary><ul class="list">'+pays.map(function(p){
+  return '<li class="row"><div class="brow"><div class="l"><b>'+fmtDate(p.date)+'</b><span class="amt">'+inr(p.amount)+'</span></div><small class="muted" style="display:block">Principal '+inr(p.prin)+' · Interest '+inr(p.intr)+(p.note?' · '+esc(p.note):'')+'</small></div><button class="icon-btn" data-act="del-pay" data-id="'+p.id+'" aria-label="Delete payment of '+inr(p.amount)+'">'+icon('trash')+'</button></li>'}).join('')+'</ul></details>':'<p class="muted small" style="margin-top:12px">No repayments logged yet.</p>';
+ return '<section class="card"><h2><span style="display:flex;align-items:center;gap:8px;min-width:0;overflow-wrap:anywhere"><i class="dot" style="background:'+col+'"></i>'+esc(d.name)+'</span>'+duePill(d)+'</h2>'+
+  '<div class="sumline"><span>Left <b>'+inr(bal)+'</b></span><span>of '+inr(d.total)+' · '+Math.round(pct)+'% repaid</span></div>'+
+  '<div class="bar"><i style="width:'+pct.toFixed(0)+'%;background:'+col+'"></i></div>'+
+  '<p class="muted small" style="margin-top:8px">'+info.join(' · ')+'</p>'+(pay?'<div style="margin-top:8px">'+pay+'</div>':'')+
+  '<div class="btns" style="margin-top:12px">'+(bal>0?'<button class="btn primary sm" data-act="add-pay" data-id="'+d.id+'">'+icon('plus')+'Record repayment</button>':'')+
+  '<button class="btn sm" data-act="edit-debt" data-id="'+d.id+'">'+icon('edit')+'Edit</button><button class="icon-btn" data-act="del-debt" data-id="'+d.id+'" aria-label="Delete '+esc(d.name)+'">'+icon('trash')+'</button></div>'+hist+'</section>';
+}
+function vDebts(){
+ var l=debtList(),t=debtTotals(l),h=sampleBanner(),rp=repaidIn(l,month);
+ var pct=t.total>0?Math.min(100,Math.max(0,t.total-t.bal)/t.total*100):null;
+ h+='<section class="card hero"><div class="top"><div><p class="eyebrow">'+(multi()?esc(scopeLabel())+' · ':'')+'Total owed</p><p class="big"'+(t.bal>0?' style="color:var(--ink)"':'')+'>'+inr(t.bal)+'</p></div>'+(pct==null?'':'<span class="pill good">'+Math.round(pct)+'% repaid</span>')+'</div>'+
+  '<div class="stats"><div><b>'+inr(t.emi)+'</b><span>Monthly EMIs</span></div><div><b>'+inr(rp)+'</b><span>Repaid in '+monthShort(month)+'</span></div><div><b>'+l.length+'</b><span>Debts</span></div></div></section>';
+ if(!l.length)return h+'<div class="card">'+emptyState('No debts yet','Add loans, credit cards or money you borrowed, then log each repayment to watch the balance come down.','<button class="btn primary" data-act="add-debt">'+icon('plus')+'Add debt</button>')+'</div>';
+ l.slice().sort(function(a,b){return debtBal(b)-debtBal(a)}).forEach(function(d){h+=debtItem(d)});
+ return h+'<div class="btns"><button class="btn primary" data-act="add-debt">'+icon('plus')+'Add debt</button></div><p class="muted small">Interest on each repayment is estimated as one month of interest on what you owe, and the rest reduces the balance. Enter the lender’s split when you record a repayment if you have it. Repayments here do not change Saved on the dashboard unless you also log them under Expenses or Recurring.</p>';
+}
+function debtModal(id){
+ var d=id?S.debts.filter(function(x){return x.id===id})[0]:null,paidPrin=d?sum(d.payments,function(p){return p.prin}):0;
+ openModal({title:d?'Edit debt':'Add debt',submit:d?'Save changes':'Save',
+  body:'<label class="fld"><span>Name</span><input id="d_name" maxlength="40" autocomplete="off" placeholder="e.g. Car loan, HDFC credit card" value="'+esc(d?d.name:'')+'"></label>'+
+   '<label class="fld"><span>Type</span><select id="d_type">'+DEBT_TYPES.map(function(t){return '<option'+(d&&d.type===t?' selected':'')+'>'+esc(t)+'</option>'}).join('')+'</select></label>'+
+   '<div class="frow"><label class="fld"><span>Original amount (₹)</span><input id="d_total" inputmode="decimal" autocomplete="off" placeholder="Same as owed now" value="'+(d?rupeesStr(d.total):'')+'"></label>'+
+   '<label class="fld"><span>Owed now (₹)</span><input id="d_bal" inputmode="decimal" autocomplete="off" placeholder="0" value="'+(d?rupeesStr(debtBal(d)):'')+'"></label></div>'+
+   '<div class="frow"><label class="fld"><span>Interest (% a year)</span><input id="d_rate" inputmode="decimal" autocomplete="off" placeholder="0" value="'+(d&&d.rate?String(d.rate):'')+'"></label>'+
+   '<label class="fld"><span>Monthly EMI (₹)</span><input id="d_emi" inputmode="decimal" autocomplete="off" placeholder="Optional" value="'+(d&&d.emi?rupeesStr(d.emi):'')+'"></label></div>'+
+   '<div class="frow"><label class="fld"><span>Due day of month</span><input id="d_day" inputmode="numeric" autocomplete="off" placeholder="e.g. 5" value="'+(d&&d.day?d.day:'')+'"></label>'+
+   '<label class="fld"><span>Tracking from</span><input id="d_date" type="date" value="'+(d?d.date:today())+'"></label></div>'+whoField(d?(d.who||OWNER):defWho(),'Owner'),
+  onSubmit:function(f){
+   var n=$('#d_name').value.trim().slice(0,40);if(!n)return 'Give this debt a name.';
+   var bal=parseAmt($('#d_bal').value);if(bal==null||bal>MAXP||(!d&&bal<=0))return 'Enter how much you owe now, like 250000.';
+   var rt=$('#d_total').value.trim(),tot=rt===''?bal+paidPrin:parseAmt(rt);
+   if(tot==null||tot<=0)return 'Enter the original amount as a number, or leave it blank.';
+   tot=Math.max(tot,bal+paidPrin);if(tot>MAXP)return 'That amount is too large. The limit is ₹10,00,00,000.';
+   var rs=$('#d_rate').value.trim(),rate=0;
+   if(rs!==''){if(!/^\d+(\.\d{1,2})?$/.test(rs)||+rs>100)return 'Enter the yearly interest as a number up to 100, like 9.5, or leave it blank.';rate=+rs}
+   var es=$('#d_emi').value.trim(),emi=0;
+   if(es!==''){emi=parseAmt(es);if(emi==null||emi>MAXP)return 'Enter the EMI as a number, or leave it blank.'}
+   var ds=$('#d_day').value.trim(),day=0;
+   if(ds!==''){day=+ds;if(!/^\d{1,2}$/.test(ds)||day<1||day>31)return 'Due day must be between 1 and 31, or blank.'}
+   var dt=$('#d_date').value;if(!validDate(dt))return 'Pick a valid date.';
+   var who=checkedWho(f),t=$('#d_type').value;
+   if(d){d.name=n;d.type=t;d.total=tot;d.opening=bal+paidPrin;d.rate=rate;d.emi=emi;d.day=day;d.date=dt;d.who=who}
+   else S.debts.push({id:uid(),name:n,type:t,total:tot,opening:bal,rate:rate,emi:emi,day:day,date:dt,who:who,payments:[]});
+   lastWho=who;save();render();toast(offViewNote(who).trim()||'Debt saved.');
+  }});
+}
+function payModal(id){
+ var d=S.debts.filter(function(x){return x.id===id})[0];if(!d)return;
+ var bal=debtBal(d);
+ openModal({title:'Record repayment',sub:esc(d.name)+' · you owe '+inr(bal),submit:'Save repayment',
+  body:'<div class="frow"><label class="fld"><span>Amount paid (₹)</span><input id="p_amt" inputmode="decimal" autocomplete="off" placeholder="0" value="'+(d.emi?rupeesStr(d.emi):'')+'"></label>'+
+   '<label class="fld"><span>Date</span><input id="p_date" type="date" value="'+today()+'"></label></div>'+
+   '<label class="fld"><span>Principal part (₹, optional)</span><input id="p_prin" inputmode="decimal" autocomplete="off" placeholder="Worked out from the interest rate"></label>'+
+   '<label class="fld"><span>Note (optional)</span><input id="p_note" maxlength="60" autocomplete="off" placeholder="e.g. March EMI"></label>',
+  onSubmit:function(){
+   var a=parseAmt($('#p_amt').value),er=amountErr(a);if(er)return er;
+   var dt=$('#p_date').value;if(!validDate(dt))return 'Pick a valid date.';
+   var ps=$('#p_prin').value.trim(),prin,it;
+   if(ps!==''){prin=parseAmt(ps);if(prin==null||prin>a)return 'The principal part must be a number no larger than the amount paid.'}
+   else{it=Math.round(bal*d.rate/1200);prin=Math.min(Math.max(0,a-it),bal)}
+   d.payments.push({id:uid(),date:dt,amount:a,prin:prin,intr:a-prin,note:$('#p_note').value.trim().slice(0,60)});
+   save();render();toast(inr(prin)+' went to principal.'+(bal-prin<=0?' This debt is cleared.':''));
+  }});
+}
+
 /* categories & budgets */
 function vCategories(){
- var sp=spendByCat(month);
- var h='<section class="card"><h2>Categories and budgets <small>Spending for '+monthLabel(month)+'</small></h2><ul class="list">'+S.categories.map(function(c){
+ var sp=spendByCat(month),last=S.categories.length-1;
+ var h='<section class="card"><h2>Categories and budgets <small>Spending for '+monthLabel(month)+'</small></h2><ul class="list">'+S.categories.map(function(c,ci){
   var s=sp[c.id]||0,r=c.budget?s/c.budget:0,cls=r>1?'bad':r>=0.8?'warn':'';
   var status=c.budget?(r>1?'<span class="pill bad">Over by '+inr(s-c.budget)+'</span>':r>=0.8?'<span class="pill warn">'+Math.round(r*100)+'% used</span>':'<span class="pill">'+Math.round(r*100)+'% used</span>'):'<span class="pill">No limit</span>';
   return '<li class="row"><button class="row-main" data-act="edit-cat" data-id="'+c.id+'" aria-label="Edit category '+esc(c.name)+'" style="align-items:flex-start"><i class="dot" style="background:'+c.color+';margin-top:7px"></i><span class="row-t"><b>'+esc(c.name)+'</b><small>'+inr(s)+(c.budget?' of '+inr(c.budget):' spent')+'</small>'+
-   (c.budget?'<div class="bar"><i class="'+cls+'" style="width:'+Math.min(100,r*100).toFixed(0)+'%"></i></div>':'')+'</span>'+status+'</button></li>'}).join('')+'</ul>'+
+   (c.budget?'<div class="bar"><i class="'+cls+'" style="width:'+Math.min(100,r*100).toFixed(0)+'%"></i></div>':'')+'</span>'+status+'</button><span class="mv"><button type="button" class="icon-btn" data-act="cat-up" data-id="'+c.id+'" aria-label="Move '+esc(c.name)+' up"'+(ci===0?' disabled':'')+'>'+icon('up')+'</button><button type="button" class="icon-btn" data-act="cat-down" data-id="'+c.id+'" aria-label="Move '+esc(c.name)+' down"'+(ci===last?' disabled':'')+'>'+icon('down')+'</button></span></li>'}).join('')+'</ul>'+
   '<div class="btns" style="margin-top:12px"><button class="btn primary" data-act="add-cat">'+icon('plus')+'Add category</button></div></section>'+
-  '<p class="muted small">A budget is a monthly limit. Leave it blank for no limit. You will see a warning at 80% and again when you pass 100%.'+(multi()?' Progress shows spending for the view you are in ('+esc(scopeLabel())+').':'')+'</p>';
+  '<p class="muted small">Use the arrows to change the order. This order is also used when you pick a category. A budget is a monthly limit. Leave it blank for no limit. You will see a warning at 80% and again when you pass 100%.'+(multi()?' Progress shows spending for the view you are in ('+esc(scopeLabel())+').':'')+'</p>';
  return h;
 }
 
@@ -837,7 +966,7 @@ function vPrefs(){
 }
 
 /* ---------- render ---------- */
-var views={dashboard:vDashboard,investments:vInvestments,expenses:vExpenses,income:vIncome,categories:vCategories,recurring:vRecurring,preferences:vPrefs};
+var views={dashboard:vDashboard,investments:vInvestments,debts:vDebts,expenses:vExpenses,income:vIncome,categories:vCategories,recurring:vRecurring,preferences:vPrefs};
 function renderHeader(){
  var isNow=month===curMonth();
  $('#hrow').innerHTML='<div class="brand"><img src="'+LOGO+'" alt="" width="32" height="32">Hisaab<small>Income, expenses, savings</small></div>'+
@@ -845,7 +974,7 @@ function renderHeader(){
   (isNow?'':'<button class="today-chip" data-act="month-today">Today</button>')+'</div>'+
   '<button class="icon-btn" data-act="theme-toggle" aria-label="Switch to '+(isDark()?'light':'dark')+' mode">'+icon(isDark()?'sun':'moon')+'</button>';
  $('#tabs').innerHTML=TABS.map(function(t){return '<a class="tab" href="#'+t[0]+'"'+(t[0]===view?' aria-current="page"':'')+'>'+t[1]+'</a>'}).join('');
- $('#fab').hidden=(view==='preferences'||view==='investments');
+ $('#fab').hidden=(view==='preferences'||view==='investments'||view==='debts');
  renderViews();
 }
 function render(){
@@ -959,6 +1088,10 @@ function catByName(n){var c=S.categories.filter(function(x){return x.name.toLowe
 function loadSample(){
  var rnd=seeded(11),m0=curMonth(),td=new Date().getDate();
  [['Nifty 50 index SIP','SIP',1500000,1634000,-2],['Blue-chip stocks','Stocks',2500000,2380000,-1],['Gold ETF','Gold',1000000,1125000,-1],['Fixed deposit','Fixed Deposit',2000000,2037000,0]].forEach(function(x){S.investments.push({id:uid(),name:x[0],type:x[1],invested:x[2],value:x[3],date:addMonths(m0,x[4])+'-02',who:OWNER,s:1})});
+ var cl={id:uid(),name:'Car loan',type:'Car loan',total:60000000,opening:42500000,rate:9.5,emi:1250000,day:5,date:addMonths(m0,-3)+'-05',who:OWNER,payments:[],s:1};
+ S.debts.push(cl);
+ [-2,-1,0].forEach(function(k){var dt=addMonths(m0,k)+'-05';if(dt>today())return;var it=Math.round(debtBal(cl)*cl.rate/1200);cl.payments.push({id:uid(),date:dt,amount:cl.emi,prin:cl.emi-it,intr:it,note:'EMI'})});
+ S.debts.push({id:uid(),name:'Borrowed from Ravi',type:'Borrowed from person',total:2000000,opening:1500000,rate:0,emi:0,day:0,date:addMonths(m0,-2)+'-10',who:OWNER,payments:[],s:1});
  function pick(a){return a[Math.floor(rnd()*a.length)]}
  function amt(lo,hi){return Math.round((lo+rnd()*(hi-lo))/10)*1000}
  var plan=[['Food',.55,120,650,['Lunch','Dinner out','Tea and snacks','Biryani','Cafe']],['Groceries',.28,500,1800,['Vegetables','Weekly groceries','Milk and eggs','Fruits']],
@@ -979,7 +1112,7 @@ function loadSample(){
 function clearSample(){
  var rid={};S.recurring.forEach(function(r){if(r.s)rid[r.id]=1});
  S.expenses=S.expenses.filter(function(e){return !e.s});
- S.recurring=S.recurring.filter(function(r){return !r.s});S.investments=S.investments.filter(function(v){return !v.s});
+ S.recurring=S.recurring.filter(function(r){return !r.s});S.investments=S.investments.filter(function(v){return !v.s});S.debts=S.debts.filter(function(v){return !v.s});
  Object.keys(S.applied).forEach(function(k){if(rid[k.split('|')[1]])delete S.applied[k]});
  Object.keys(S.income).forEach(function(m){S.income[m]=S.income[m].filter(function(i){return !i.s});if(!S.income[m].length)delete S.income[m]});
  save();
@@ -995,6 +1128,14 @@ function copyText(text,label){
  try{if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(function(){toast(label+' copied.')},fallback)}else fallback()}catch(e){fallback()}
 }
 
+function moveCat(id,dir){
+ var i=S.categories.findIndex(function(c){return c.id===id}),j=i+dir;
+ if(i<0||j<0||j>=S.categories.length)return;
+ var c=S.categories.splice(i,1)[0];S.categories.splice(j,0,c);save();render();
+ var b=document.querySelector('[data-act="'+(dir<0?'cat-up':'cat-down')+'"][data-id="'+id+'"]');
+ if(!b||b.disabled)b=document.querySelector('[data-act="'+(dir<0?'cat-down':'cat-up')+'"][data-id="'+id+'"]');
+ if(b&&!b.disabled)b.focus();
+}
 /* ---------- actions ---------- */
 var actions={
  'month-prev':function(){month=addMonths(month,-1);render()},
@@ -1009,11 +1150,18 @@ var actions={
  'add-inv':function(){invModal()},
  'edit-inv':function(id){invModal(id)},
  'del-inv':function(id){var i=S.investments.findIndex(function(x){return x.id===id});if(i<0)return;var it=S.investments.splice(i,1)[0];save();render();toast('Investment deleted.',function(){S.investments.splice(Math.min(i,S.investments.length),0,it);save();render()})},
+ 'add-debt':function(){debtModal()},
+ 'edit-debt':function(id){debtModal(id)},
+ 'del-debt':function(id){var i=S.debts.findIndex(function(x){return x.id===id});if(i<0)return;var it=S.debts.splice(i,1)[0];save();render();toast('Debt deleted.',function(){S.debts.splice(Math.min(i,S.debts.length),0,it);save();render()})},
+ 'add-pay':function(id){payModal(id)},
+ 'del-pay':function(id){for(var a=0;a<S.debts.length;a++){var d=S.debts[a],i=d.payments.findIndex(function(x){return x.id===id});if(i>=0){var it=d.payments.splice(i,1)[0];save();render();toast('Repayment deleted.',function(){d.payments.splice(Math.min(i,d.payments.length),0,it);save();render()});return}}},
  'add-inc':function(){incomeModal()},
  'edit-inc':function(id){incomeModal(id)},
  'del-inc':function(id){var arr=S.income[month]||[],i=arr.findIndex(function(x){return x.id===id});if(i<0)return;var it=arr.splice(i,1)[0];if(!arr.length)delete S.income[month];save();render();
   toast('Income deleted.',function(){(S.income[month]=S.income[month]||[]).splice(i,0,it);save();render()})},
  'copy-inc':function(){var pm=addMonths(month,-1),src=(S.income[pm]||[]).filter(function(x){return inScope(x.who)});if(!src.length)return;S.income[month]=(S.income[month]||[]).concat(src.map(function(x){return {id:uid(),name:x.name,amount:x.amount,who:x.who||OWNER,s:x.s}}));save();render();toast('Copied income from '+monthLabel(pm)+'. Edit any amounts that changed.')},
+ 'cat-up':function(id,t){moveCat(id,-1)},
+ 'cat-down':function(id,t){moveCat(id,1)},
  'add-cat':function(){catModal()},
  'edit-cat':function(id){catModal(id)},
  'del-cat':function(id){deleteCatFlow(id)},
